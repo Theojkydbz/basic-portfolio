@@ -1,16 +1,45 @@
+import fakeApi from '@/lib/fakeApi'
 import Vue from 'vue'
-import Vuex from 'vuex'
 
-Vue.use(Vuex)
+const store = {
+    state:{
+        works: {}
+    },
+    
+    fetchWorks () { 
+        return fakeApi.get('works', {force: 1})
+            .then( works => {
+                const keys = Object.keys(works)
+                Object.keys(works).forEach((key) => {
+                    this.setItem('works', key, works)
+                })
 
-export default new Vuex.Store({
-  state: {
+                return works
+            })
+    },
+    fetchWorkById (id) {
+        
+        return fakeApi.get('works',{force: 1})
+        .then( works => {
+            const keys = Object.keys(works)
+            Object.keys(works).forEach((key) => {
+                this.setItem('works', key, works)
+            })
 
-  },
-  mutations: {
+            return works
+        })
+    },
+        
+    
+    fetchUser () {
+        return {
+            name: 'Théo Geiller',
+            id: '-Aj34jknvncx98812'
+        }
+    },
+    setItem (ressource, id, item) {
+        Vue.set(this.state[ressource], id, item[id])
+    }
+}
 
-  },
-  actions: {
-
-  }
-})
+export default store
