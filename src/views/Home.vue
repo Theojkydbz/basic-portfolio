@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <Header />
+    <Wrapper />
     
                       
         <div class="column is-9">
@@ -30,12 +31,19 @@ import Vue from 'vue'
 import store from '../store.js'
 
 import WorkItems from '@/components/WorkItems'
+import Header from '@/components/home/Header.vue'
+import Wrapper from '@/components/home/Wrapper.vue'
 // import { fetchActivities, fetchCategories, fetchUser, deleteActivityAPI } from '@/api'
 import { debug } from 'util';
 
 export default {
   name: 'App',
-  components: { WorkItems },
+  components: { 
+    WorkItems, 
+    Header,
+    Wrapper 
+  },
+  
   data () {
     const { state: {works}} = store
     return {

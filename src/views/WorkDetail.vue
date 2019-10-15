@@ -1,11 +1,11 @@
 <template>
   <div class="projet">
         <div class="card2-wrapper2">
-            <div class="card2 open2">
+            <div class="card2 open2" @click="handleView($event, work)">
                 <div class="card2-top">
                         <div class="img"> </div>
                         <div class="text">
-                            <p class="metier">{{work.metier}}</p>
+                            <p class="metier">Product Design</p>
                             <h2 class="name">Smartimer Of Galaxy</h2>
                             <p class='shorttext'>Workflow and project management together in a timer</p>
                         </div>
@@ -60,7 +60,6 @@ export default {
             this.isFetching = false
             let idsearch = this.$route.params.id
             this.work = works.idsearch
-            debugger
         })
         .catch(err => {
             this.error = err
@@ -70,7 +69,39 @@ export default {
         store.fetchWorkById()
         .then(works =>{
         })
+    },
+    methods: {
+        handleView(el, work){
+            this.work.open = !this.work.open;
+            let viewportOffset= el.target.getBoundingClientRect()
+            
+
+            if(this.work.open2){
+                document.body.style.top = '-' + window.scrollY+ 'px';
+                document.body.style.position = 'fixed';
+                
+
+                this.styleObject.transform = 
+                    'translate('+viewportOffset.left * -1 + 'px, '+ viewportOffset.top * -1 +'px)';
+                
+            } else {
+                this.styleObject = {
+                    transform: 'translate(0px,0px)'
+                }
+                let scrollY = document.body.style.top
+                document.body.style.position = '';
+                document.body.style.top = '';
+                window.scrollTo(0, parseInt(scrollY) * -1);
+            }
+
+            var delayInMilliseconds = 1000; //1 second
+
+            setTimeout(function() {
+                document.location.href=`/`
+            }, delayInMilliseconds);
+            
         }
+    }
         
     }
 
@@ -170,9 +201,13 @@ export default {
                 padding-top: 65%
             }
         }
-        .content{
-            padding: 20px;
+    }
+    .content{
+        display: none;
+        &.open {
+            display: none;
         }
+
     }
 }
 
