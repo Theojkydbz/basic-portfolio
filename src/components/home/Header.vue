@@ -1,6 +1,8 @@
 <template>
   <div class="head">
-    <div class="wrap"> 
+    <div class="wrap">
+      <img class="logo"
+            src="@/assets/logo.svg" alt="">
     </div>
     <div class="wrap">
       <div class="line">
@@ -123,7 +125,7 @@ export default {
 
 <style scoped>
 .head{
-  margin-top: 10vh;
+  margin-top: 10vh
 }
 .head .wrap{
     display: block;
