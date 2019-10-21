@@ -1,33 +1,42 @@
 <template>
   <div id="app">
-    <router-view/>
+    <TheNavBar />
+    <div class="router">
+      <router-view/>
+    </div>
   </div> 
 </template>
+<script>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+import TheNavBar from '@/components/TheNavBar'
+
+export default{
+  components:{
+    TheNavBar
   }
 }
 
-body{
-  margin:0;
+</script>
+<style lang="scss">
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
 }
+
+html, body, #app{
+  margin: 0;
+  padding: 0;
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+}
+
+
+
+.router{
+  margin-left: 30vw
 }
 </style>

@@ -1,19 +1,4 @@
 <template>
-  <div class="head">
-    <div class="wrap">
-      <img class="logo"
-            src="@/assets/logo.svg" alt="">
-    </div>
-    <div class="wrap">
-      <div class="line">
-        <h1>Théo Geiller</h1> 
-        <p class="separateur">|</p> 
-        <p class="role"> Product Designer</p>
-      </div>
-      <div class="line">
-        <p class="devise"> HUMAN CENTERED INTERACTION</p>
-      </div>
-      <div class="line social">
         <div class="social">
             <svg :opacity="opai" width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -93,147 +78,64 @@
                 </g>
             </svg>
         </div>
-      </div>
-    </div>
-  </div>
+    
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      hover: false,
-      colori:'#CAD1D9',
-      colori1: '#2F3542',
+    data() {
+        return {
+            opai: '',
+            opab: '',
+            opag: '',
+            opal: '',
+            hover: false,
+            colori:'#CAD1D9',
+            colori1: '#2F3542',
 
-      colorb:'#CAD1D9',
-      colorb1: '#2F3542',
+            colorb:'#CAD1D9',
+            colorb1: '#2F3542',
 
-      colorg:'#CAD1D9',
-      colorg1: '#2F3542',
+            colorg:'#CAD1D9',
+            colorg1: '#2F3542',
 
-      colorl:'#CAD1D9',
-      colorl1: '#2F3542'
-    };
-  },
-  computed:{
-
-  }
+            colorl:'#CAD1D9',
+            colorl1: '#2F3542'
+        };
+    },
 
 }
 </script>
 
-<style scoped>
-.head{
-  margin-top: 10vh
-}
-.head .wrap{
-    display: block;
-  }
-
-.logo{
-  height: 10vh;
-  width: 10vh;
-  margin-right: 0;
-}
-.line *{
-  margin: 0 0 0 0;
-  padding: 5px;
-  
-  
-}
-h1{
-  font-family: Avenir-Medium;
-  font-size: 140%;
-  color: #2F3542;
-}
-.separateur{
-  display: none;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
-  font-size: 140%;
-  color: rgba(139,160,233,0.45);
-}
-.role{
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
-  font-size: 140%;
-  color: #747D8C;
-}
-.devise{
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
-  font-size: 130%;
-  color: #A4B0BE;
-}
+<style lang='scss' scoped>
 
 
 .social{
-  margin-top: 2vh;
-  margin: 0 auto;
-  margin-bottom: 10vw
+  position: fixed;
+  bottom: 10vh;
+  left:8vh;
 }
-
 
 
 @media only screen and (min-width : 450px){
-/* Styles pour cette Media Queries */
 
-  .head .wrap{
-    display: inline-block;
-    vertical-align: text-top;
-  }
+    .line *{
+        margin: 0 0 0 0;
+        padding: 5px;
+        display: inline-block; 
+    }
+    .social{
 
-  .logo{
-    height: 15vh;
-    width: 15vh;
-    margin-right: 2vh;
-  }
+        float: left;
+        margin-top: 2vh;
 
-  .line *{
-    margin: 0 0 0 0;
-    padding: 5px;
-    display: inline-block; 
-  }
+        a:first-child{
 
-  h1{
-    font-family: Avenir-Medium;
-    font-size: 140%;
-    color: #2F3542;
-  }
-  
-  .separateur{
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 300;
-    font-size: 140%;
-    color: rgba(139,160,233,0.45);
-  }
+            padding-left:0px;
 
-  .role{
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 300;
-    font-size: 140%;
-    color: #747D8C;
-  }
+        }
 
-  .devise{
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 300;
-    font-size: 130%;
-    color: #A4B0BE;
-   
-  }
-  
-  .social{
-    float: left;
-    margin-top: 2vh;
-    
-  }
+    }
 
-  .social a:first-child{
-    padding-left:0px;
-  }
 }
-
-
 </style>
