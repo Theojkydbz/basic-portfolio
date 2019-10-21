@@ -11,9 +11,6 @@
           <p class="devise"> HUMAN CENTERED INTERACTION</p>
         </div>
         <div class="line">
-          <div class="routernav" v-if="Showrouter">
-            
-          </div>
           <Social />
         </div>
       </div>
@@ -39,23 +36,23 @@ export default {
   components:{
     Social
   },
-  watch:{
-    $route (to, from){
-      console.log(this.$route.params.id)
-      if(this.$route.params.id){
-        this.Showrouter = true;
-      }else{
-        this.Showrouter = false;
-      }
-      var id = parseInt(this.$route.params.id)
-      this.Next = '/work/' + (id + 1)
-      this.Previous = '/work/' + (id - 1)
+  // watch:{
+    // $route (to, from){
+    //   console.log(this.$route.params.id)
+    //   if(this.$route.params.id){
+    //     this.Showrouter = true;
+    //   }else{
+    //     this.Showrouter = false;
+    //   }
+    //   var id = parseInt(this.$route.params.id)
+    //   this.Next = '/work/' + (id + 1)
+    //   this.Previous = '/work/' + (id - 1)
 
-      if(id == '1546968934'){this.ableToPrev=false}else{this.ableToPrev=true}
-      if(id == '1546968939'){this.ableToNext=false}else{this.ableToNext=true}
-      console.log('next:'+this.Next+'previous:'+this.Previous)
-    }
-  }
+    //   if(id == '1546968934'){this.ableToPrev=false}else{this.ableToPrev=true}
+    //   if(id == '1546968939'){this.ableToNext=false}else{this.ableToNext=true}
+    //   console.log('next:'+this.Next+'previous:'+this.Previous)
+    // }
+  // }
 
 }
 </script>

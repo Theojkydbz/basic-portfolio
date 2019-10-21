@@ -1,13 +1,32 @@
 {
-  "2019": [
+  "Case Studies": [
     {
-      "id": "vue-markdown-blog",
+      "id": "smartimer-of-galaxy",
       "date": "March 18, 2019",
-      "title": "Creating a Simple Blog using Vue + Markdown",
+      "title": "Smartimer of Galaxy",
+      "description": "Simple and neat way to add a blogging feature to add on your website."
+    },
+    {
+      "id": "smartimer-of-galaxy",
+      "date": "March 18, 2019",
+      "title": "epo",
+      "description": "Simple and neat way to add a blogging feature to add on your website."
+    },
+    {
+      "id": "smartimer-of-galaxy",
+      "date": "March 18, 2019",
+      "title": "Smartimer of Galaxy",
+      "description": "Simple and neat way to add a blogging feature to add on your website."
+    },
+    {
+      "id": "smartimer-of-galaxy",
+      "date": "March 18, 2019",
+      "title": "Smartimer of Galaxy",
       "description": "Simple and neat way to add a blogging feature to add on your website."
     }
   ],
-  "stories": [
+  "Experiments": 
+  [
     {
       "id": "maud-sparrow",
       "date": "April 21, 2018",

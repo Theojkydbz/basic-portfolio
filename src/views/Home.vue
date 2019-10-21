@@ -1,37 +1,62 @@
 <template>
   <div class="home"> 
     <div class="column is-9">
-      <div  class="box content" 
+      <div  
             :class="{fetching: isFetching, 'has-error': error}">
+
         <div v-if="error">
             {{ error }}
         </div>
+
         <div v-else>
           <div v-if="isFetching">
-              loading
-          </div>
-          <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
-            <h2 class="center">{{section}}</h2>
-            <div class="section" v-for="entry in entries[section]" :key="entry.id">
-              <div class="entry">
-                <h3 @click="$router.push({name: entry.id})">
-                  {{entry.title}}
-                  <span class="subtitle">{{entry.date}}</span>
-                </h3>
-                <p>{{entry.description}}</p>
+            
+            <h1 id="Casestudies">case</h1>
+  
+            <div class="card-wrapper">
+
+              <div class="card">
+                <div class="card-top">
+                      <div class="img"> </div>
+                      <div class="text">
+                          <p class="metier">Product design</p>
+                          <h2 class="name">hey</h2>
+                          <p class='shorttext'>yo</p>
+                      </div>
+                </div>
               </div>
+
             </div>
           </div>
-          <!-- <h1 id="Casestudies">Project & Case studies</h1>
-          <div class="card-wrapper">
-            <WorkItems   />
-          </div>
-          <h1 id="Experiments">Experiments</h1>
-          <div class="card-wrapper">
-            <WorkItems   />
-          </div> -->
         </div>
+        
+        
+        
         <div v-if="!isFetching">
+
+          <div v-for="(section, index) in Object.keys(entries)" :key="index">
+            <h1 id="Casestudies">{{section}}</h1>
+            
+            <div class="card-wrapper">
+
+              <div v-for="entry in entries[section]" :key="entry.id" class="card" @click="$router.push({name: entry.id})">
+                <div class="card-top">
+                      <div class="img"> </div>
+                      <div class="text">
+                          <p class="metier">Product design</p>
+                          <h2 class="name">{{entry.title}}</h2>
+                          <p class='shorttext'>{{entry.description}}</p>
+                      </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          
+          </div>
         </div>
       </div>
     </div>
@@ -44,23 +69,16 @@ import BLOGENTRIES from '@/statics/data/blogs.json'
 import Vue from 'vue'
 import store from '../store.js'
 
-import WorkItems from '@/components/WorkItems'
 // import { fetchActivities, fetchCategories, fetchUser, deleteActivityAPI } from '@/api'
 import { debug } from 'util';
 
 export default {
   name: 'App',
-  components: { 
-    WorkItems, 
-  },
-  
   data () {
     const { state: {works}} = store
     return {
       isFetching: false,
       error: null,
-      user: {},
-      works: works,
     }
   },
   computed: {
@@ -68,7 +86,7 @@ export default {
       return BLOGENTRIES
     },
     isDataLoaded () {
-      return this.works && this.works
+      return BLOGENTRIES
     }
   },
   
@@ -91,7 +109,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 
  html,body {
   font-family: 'Open Sans', serif;
@@ -99,9 +117,6 @@ export default {
 }
 footer {
   background-color: #F2F6FA !important;
-}
-.fetching{
-  border: 2px solid orange;
 }
 
 .has-error {
@@ -113,19 +128,394 @@ footer {
     margin:auto;
     display: grid;
     grid-gap: 40px 40px;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr ;
 
     padding-left: 10%;
-    padding-right: 300px;
+    padding-right: 20%;
+    margin-bottom: 10%;
 
-    margin-bottom: 10vh
 }
 
 h1{
-  margin-top: 25vh;
-  margin-left: 5vw;
-  margin-bottom: 10vh;
+  margin-top: 20vh;
+  margin-left: 10%;
+  margin-bottom: 5%;
   text-align: left
 
 }
+
+
+    .card {
+        background-color: #797979;
+        transition: all 0.3s cubic-bezier(.65,0,.62,1.39);
+
+        display: grid;
+        grid-template-columns: 2fr;
+        
+        border-radius: 2.5vh;
+        overflow: hidden;
+
+        width: 80vw;
+        height: 120vw;
+        
+        box-shadow: 0 14px 20px -1px rgba(109, 109, 109, 0.74);
+       
+        &:hover{
+            transform:translateY(-15px);
+            cursor: pointer;
+            box-shadow: 0 30px 30px -1px rgba(109, 109, 109, 0.74);
+        }
+        
+
+        .card-top{
+            position: relative;
+
+            .img{
+                width: 100%;
+                height: 100%;
+                background-image: url('../assets/proj1/cover.png');
+                background-position: center;
+                background-size: cover;
+
+                background-size: auto 100%;
+                background-repeat:no-repeat;
+                background-position: center top;
+            }
+            .text{
+                position: absolute;
+                top:0;
+            }
+            .text *{
+                color: white;
+                text-decoration:none;
+                text-align: left;
+                padding-left:20px;
+                padding-right:50px;
+            }
+            .text .metier{
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 500;
+                font-size: 1rem; 
+                text-transform: uppercase;
+                color: rgba(255,255,255, 0.7)
+            }
+            .text .name{
+                text-transform: capitalize;
+                font-size: 3rem; 
+                padding-top: 0;
+                margin-top:0;
+            }
+            .text .shorttext{ 
+                position: absolute;
+                font-family: 'Work Sans', sans-serif;
+                font-size: 2rem; 
+                top: 110px;
+                width: 480px;
+            }
+        }
+        
+    }
+    @media only screen and (min-width : 730px){
+
+    h1{
+      margin-top: 20vh;
+      margin-left: 10%;
+      margin-bottom: 3%;
+      text-align: left;
+    }
+            
+    .card-wrapper{
+
+        margin:auto;
+        display: grid;
+        grid-gap: 40px 40px;
+        grid-template-columns: 1fr ;
+
+        padding-left: 10%;
+        padding-right: 20%;
+        margin-bottom: 10%;
+
+    }
+
+        .card {
+            overflow: hidden;
+            z-index: 1;
+            background-color: #ffffff;
+            width: 400px;
+            height: 380px;
+
+            .card-top{
+                position: relative;
+
+                .img{
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('../assets/proj1/cover.png');
+                    background-position: center;
+                    background-size: cover;
+
+                    background-size: auto 100%;
+                    background-repeat:no-repeat;
+                    background-position: center top;
+                }
+                .text{
+                    position: absolute;
+                    top:0;
+                }
+                .text *{
+                    color: white;
+                    text-decoration:none;
+                    text-align: left;
+                    padding: 0;
+                    margin: 15px;
+                }
+                .text .metier{
+                    margin-top: 20px;
+                    font-family: 'Work Sans', sans-serif;
+                    font-weight: 500;
+                    font-size: 0.9rem; 
+                    text-transform: uppercase;
+                    color: rgba(255,255,255, 0.7)
+                }
+                .text .name{
+                    text-transform: capitalize;
+                    font-size: 1.3rem; 
+                    margin-top:0;
+                }
+                .text .shorttext{ 
+                    position: absolute;
+                    width: 370px;
+
+                    font-family: 'Work Sans', sans-serif;
+                    font-size: 1rem; 
+                    padding-top: 170px;
+                }
+            }
+        }
+
+    }
+    
+
+@media only screen and (min-width : 900px){
+
+
+            
+    .card-wrapper{
+
+        margin:auto;
+        display: grid;
+        grid-gap: 40px 40px;
+        grid-template-columns: 1fr 1fr;
+
+        padding-left: 10%;
+        padding-right: 20%;
+        margin-bottom: 10%;
+
+    }
+
+        .card {
+            overflow: hidden;
+            z-index: 1;
+            background-color: #ffffff;
+            width: 250px;
+            height: 380px;
+
+            .card-top{
+                position: relative;
+
+                .img{
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('../assets/proj1/cover.png');
+                    background-position: center;
+                    background-size: cover;
+
+                    background-size: auto 100%;
+                    background-repeat:no-repeat;
+                    background-position: center top;
+                }
+                .text{
+                    position: absolute;
+                    top:0;
+                }
+                .text *{
+                    color: white;
+                    text-decoration:none;
+                    text-align: left;
+                    padding: 0;
+                    margin: 15px;
+                }
+                .text .metier{
+                    margin-top: 20px;
+                    font-family: 'Work Sans', sans-serif;
+                    font-weight: 500;
+                    font-size: 0.9rem; 
+                    text-transform: uppercase;
+                    color: rgba(255,255,255, 0.7)
+                }
+                .text .name{
+                    text-transform: capitalize;
+                    font-size: 1.3rem; 
+                    margin-top:0;
+                }
+                .text .shorttext{ 
+                    position: absolute;
+                    width: 220px;
+
+                    font-family: 'Work Sans', sans-serif;
+                    font-size: 1rem; 
+                    padding-top: 150px;
+                }
+            }
+        }
+
+    }
+
+    @media only screen and (min-width : 1200px){
+
+
+        
+        .card-wrapper{
+
+            margin:auto;
+            display: grid;
+            grid-gap: 40px 40px;
+            grid-template-columns: 1fr 1fr 1fr ;
+
+            padding-left: 10%;
+            padding-right: 20%;
+            margin-bottom: 10%;
+
+        }
+
+        .card {
+            overflow: hidden;
+            z-index: 1;
+            background-color: #ffffff;
+            width: 210px;
+            height: 340px;
+
+            .card-top{
+                position: relative;
+
+                .img{
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('../assets/proj1/cover.png');
+                    background-position: center;
+                    background-size: cover;
+
+                    background-size: auto 100%;
+                    background-repeat:no-repeat;
+                    background-position: center top;
+                }
+                .text{
+                    position: absolute;
+                    top:0;
+                }
+                .text *{
+                    color: white;
+                    text-decoration:none;
+                    text-align: left;
+                    padding: 0;
+                    margin: 15px;
+                }
+                .text .metier{
+                    margin-top: 20px;
+                    font-family: 'Work Sans', sans-serif;
+                    font-weight: 500;
+                    font-size: 0.9rem; 
+                    text-transform: uppercase;
+                    color: rgba(255,255,255, 0.7)
+                }
+                .text .name{
+                    text-transform: capitalize;
+                    font-size: 1.3rem; 
+                    margin-top:0;
+                }
+                .text .shorttext{ 
+                    position: absolute;
+                    width: 180px;
+
+                    font-family: 'Work Sans', sans-serif;
+                    font-size: 0.9rem; 
+                    padding-top: 150px;
+                }
+            }
+        }
+
+    }
+
+
+
+    @media only screen and (min-width : 1440px){
+
+
+        
+
+        .card {
+            overflow: hidden;
+            z-index: 1;
+            background-color: #ffffff;
+            width: 260px;
+            height: 400px;
+            
+        
+            .card-top{
+                position: relative;
+
+                .img{
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('../assets/proj1/cover.png');
+                    background-position: center;
+                    background-size: cover;
+
+                    background-size: auto 100%;
+                    background-repeat:no-repeat;
+                    background-position: center top;
+                }
+                .text{
+                    position: absolute;
+                    top:0;
+                }
+                .text *{
+                    color: white;
+                    text-decoration:none;
+                    text-align: left;
+                }
+                .text .metier{
+                    font-family: 'Work Sans', sans-serif;
+                    font-weight: 500;
+                    font-size: 1rem; 
+                    text-transform: uppercase;
+                    color: rgba(255,255,255, 0.7)
+                }
+                .text .name{
+                    text-transform: capitalize;
+                    font-size: 1.4rem; 
+                    padding-top: 0;
+                    margin-top:0;
+                }
+                .text .shorttext{ 
+                    position: absolute;
+                    width: 230px;
+
+                    font-family: 'Work Sans', sans-serif;
+                    font-size: 1rem; 
+                    padding-top: 170px;
+                }
+            }
+        }
+    }
+
+
+
+    
+
+
+
+
+
+
 </style>

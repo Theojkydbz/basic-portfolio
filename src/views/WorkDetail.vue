@@ -1,5 +1,9 @@
 <template>
-  <div class="projet">
+  <div class="blog">
+    <router-view />
+    <router-link to="/" tag="a" class="back">&laquo; Back</router-link>
+  </div>
+  <!-- <div class="projet">
     <div class="img"> </div>
         <div class="text">
             <p class="metier">Product Design</p>
@@ -19,7 +23,7 @@
     <img src="../assets/proj1/G.png">
     <img src="../assets/proj1/I.png">
     <img src="../assets/proj1/J.png">
-  </div>
+  </div> -->
 </template>
 
 <script>
@@ -44,23 +48,8 @@ export default {
   created() {
         let scrollY = document.body.style.top
         document.body.style.position = '';
-        document.body.style.top = '0';
-        
-        this.isFetching = true
-        store.fetchWorkById(this.$route.params.id)
-        .then(works => {
-            this.isFetching = false
-            let idsearch = this.$route.params.id
-            this.work = works.idsearch
-        })
-        .catch(err => {
-            this.error = err
-            this.isFetching = false
-        })
-
-        store.fetchWorkById()
-        .then(works =>{
-        })
+        document.body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY) * -1);
     }
         
 }

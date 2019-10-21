@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <TheNavBar />
+    <TheNavBar class="menu" />
     <div class="router">
       <router-view/>
     </div>
@@ -37,6 +37,19 @@ html, body {
 
 
 .router{
-  margin-left: 30vw
+  margin-left: 0;
+}
+
+.menu{
+      display:none;
+    }
+@media only screen and (min-width : 730px){
+
+    .router{
+      margin-left: 30vw
+    }
+    .menu{
+      display:block;
+    }
 }
 </style>

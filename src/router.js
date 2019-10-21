@@ -12,7 +12,7 @@ const blogRoutes = Object.keys(BlogEntries).map(section => {
     name: child.id,
     component: () => import(`./markdowns/${section}/${child.id}.md`)
   }))
-  return {
+  return { 
     path: `/${section}`,
     name: section,
     component: () => import('./views/WorkDetail.vue'),
@@ -29,10 +29,6 @@ export default new Router({
       name: 'home',
       component: Home
     },
-    {
-      path: '/work/:id',
-      name:  'WorkDetail',
-      component: () => import(/* webpackChunkName: "about" */ './views/WorkDetail.vue')
-  },
+      ...blogRoutes
   ]
 })
