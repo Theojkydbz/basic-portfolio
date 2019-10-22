@@ -75,9 +75,8 @@ import { debug } from 'util';
 export default {
   name: 'App',
   data () {
-    const { state: {works}} = store
     return {
-      isFetching: false,
+      isFetching: true,
       error: null,
     }
   },
@@ -91,20 +90,12 @@ export default {
   },
   
   created () {
-    this.isFetching = true
-    store.fetchWorks()
-      .then(works => {
-        this.isFetching = false
-      })
-      .catch(err => {
-        this.error = err
-        this.isFetching = false
-      })
+      this.isFetching = true
+      const wait = setTimeout(() => this.isFetching = false, 0.7 * 1000)
+      wait(10 * 1000)
+        .then(() => this.isFetching = false)
+        .catch(this.isFetching = false);
 
-
-    store.fetchWorks()
-      .then(works =>{
-    })
   }
 }
 </script>

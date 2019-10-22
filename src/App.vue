@@ -6,7 +6,6 @@
     </div>
   </div> 
 </template>
-<<<<<<< HEAD
 <script>
 
 import TheNavBar from '@/components/TheNavBar'
@@ -18,9 +17,6 @@ export default{
 }
 
 </script>
-=======
- 
->>>>>>> d6dc16d241f3df5d9db250ee72857bb56761403d
 <style lang="scss">
 #app {
   -webkit-font-smoothing: antialiased;
