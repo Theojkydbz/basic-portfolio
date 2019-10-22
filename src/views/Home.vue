@@ -1,66 +1,32 @@
 <template>
-  <div class="home"> 
-    <div class="column is-9">
-      <div  
-            :class="{fetching: isFetching, 'has-error': error}">
-
-        <div v-if="error">
-            {{ error }}
-        </div>
-
-        <div v-else>
-          <div v-if="isFetching">
-            
-            <h1 id="Casestudies">case</h1>
-  
-            <div class="card-wrapper">
-
-              <div class="card">
-                <div class="card-top">
-                      <div class="img"> </div>
-                      <div class="text">
-                          <p class="metier">Product design</p>
-                          <h2 class="name">hey</h2>
-                          <p class='shorttext'>yo</p>
-                      </div>
+    <div class="home"> 
+        <div class="column is-9">
+            <div v-if="!isFetching">
+                <section class="intro">
+                    <img src="@/assets/Home/Illustration.svg" alt="">
+                    <div class="wrapper-text">
+                        <h1>Théo Geiller</h1>
+                        <p>Product Designer Student who bla bla bla blabla et blabla blablabla Design</p>
+                    </div>
+                </section>
+                <div v-for="(section, index) in Object.keys(entries)" :key="index">
+                    <h1 id="Casestudies">{{section}}</h1>
+                    <div class="card-wrapper">
+                        <div v-for="entry in entries[section]" :key="entry.id" class="card" @click="$router.push({name: entry.id})">
+                            <div class="card-top">
+                                <div class="img"> </div>
+                                <div class="text">
+                                    <p class="metier">Product design</p>
+                                    <h2 class="name">{{entry.title}}</h2>
+                                    <p class='shorttext'>{{entry.description}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-
             </div>
-          </div>
         </div>
-        
-        
-        
-        <div v-if="!isFetching">
-
-          <div v-for="(section, index) in Object.keys(entries)" :key="index">
-            <h1 id="Casestudies">{{section}}</h1>
-            
-            <div class="card-wrapper">
-
-              <div v-for="entry in entries[section]" :key="entry.id" class="card" @click="$router.push({name: entry.id})">
-                <div class="card-top">
-                      <div class="img"> </div>
-                      <div class="text">
-                          <p class="metier">Product design</p>
-                          <h2 class="name">{{entry.title}}</h2>
-                          <p class='shorttext'>{{entry.description}}</p>
-                      </div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-
-          
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -74,40 +40,59 @@ import { debug } from 'util';
 
 export default {
   name: 'App',
-  data () {
-    return {
-      isFetching: true,
-      error: null,
-    }
-  },
   computed: {
     entries() {
       return BLOGENTRIES
-    },
-    isDataLoaded () {
-      return BLOGENTRIES
     }
-  },
-  
-  created () {
-      this.isFetching = true
-      const wait = setTimeout(() => this.isFetching = false, 0.7 * 1000)
-      wait(10 * 1000)
-        .then(() => this.isFetching = false)
-        .catch(this.isFetching = false);
-
   }
 }
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap');
 
  html,body {
-  font-family: 'Open Sans', serif;
-  background: #F2F6FA;
+  font-family: 'Work Sans', serif;
+  background: rgb(255, 255, 255);
 }
-footer {
-  background-color: #F2F6FA !important;
+
+
+.intro{
+    display: flex;
+    align-content: center;
+        margin-top: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
+    .wrapper-text{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(-30px);
+
+        h1{
+            width:300px; 
+            margin:10px;
+            font-weight: 500;
+            font-size: 50px;
+            color: #2E3643;
+            letter-spacing: 0;
+
+        }
+        p{
+            
+            max-width: 90%;
+            opacity: 0.7;
+            line-height: 1.6;
+            margin:10px;
+            margin-top: 0;
+            font-weight: 400;
+            font-size: 18px;
+            color: #2E3643;
+            letter-spacing: 0;
+        }
+    }
+    
 }
 
 .has-error {
@@ -193,12 +178,14 @@ h1{
             .text .name{
                 text-transform: capitalize;
                 font-size: 3rem; 
+                font-weight: 600;
                 padding-top: 0;
                 margin-top:0;
             }
             .text .shorttext{ 
                 position: absolute;
                 font-family: 'Work Sans', sans-serif;
+                font-weight: 400;
                 font-size: 2rem; 
                 top: 110px;
                 width: 480px;
@@ -414,7 +401,7 @@ h1{
                 .text .metier{
                     margin-top: 20px;
                     font-family: 'Work Sans', sans-serif;
-                    font-weight: 500;
+                    font-weight: 400;
                     font-size: 0.9rem; 
                     text-transform: uppercase;
                     color: rgba(255,255,255, 0.7)
@@ -477,7 +464,7 @@ h1{
                 }
                 .text .metier{
                     font-family: 'Work Sans', sans-serif;
-                    font-weight: 500;
+                    font-weight: 400;
                     font-size: 1rem; 
                     text-transform: uppercase;
                     color: rgba(255,255,255, 0.7)

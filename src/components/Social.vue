@@ -111,19 +111,22 @@ export default {
 
 
 .social{
-  position: fixed;
-  bottom: 10vh;
-  left:8vh;
+    position: fixed;
+    bottom: 10vh;
+    left:8vh;
 }
 
 
 @media only screen and (min-width : 450px){
 
     .line *{
+
         margin: 0 0 0 0;
         padding: 5px;
         display: inline-block; 
+
     }
+
     .social{
 
         float: left;

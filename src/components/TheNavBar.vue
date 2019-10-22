@@ -3,12 +3,24 @@
     <div class="head">
       <div class="wrap">
         <div class="line">
-          <h1>Théo Geiller</h1> 
-          <p class="separateur">|</p> 
+          <h1>Théo Geiller</h1>
+        </div>
+        <div class="line">
           <p class="role"> Product Designer</p>
         </div>
         <div class="line">
-          <p class="devise"> HUMAN CENTERED INTERACTION</p>
+          <p class="devise"> User Centered</p>
+        </div>
+        <div class="line">
+          <div class="routernav" v-if="!Showrouter">
+            <div class="line">
+            <ul>
+              <li>
+                <a href="/">Back</a>
+              </li>
+            </ul>
+            </div>
+          </div>
         </div>
         <div class="line">
           <Social />
@@ -26,8 +38,8 @@ export default {
     return {
 
       Showrouter: false,
-      Previous:'/work/1546968934',
-      Next:'/work/1546968936',
+      Previous:'/work/',
+      Next:'/work/',
       ableToPrev:true,
       ableToNext:true,
 
@@ -36,28 +48,29 @@ export default {
   components:{
     Social
   },
-  // watch:{
-    // $route (to, from){
-    //   console.log(this.$route.params.id)
-    //   if(this.$route.params.id){
-    //     this.Showrouter = true;
-    //   }else{
-    //     this.Showrouter = false;
-    //   }
-    //   var id = parseInt(this.$route.params.id)
-    //   this.Next = '/work/' + (id + 1)
-    //   this.Previous = '/work/' + (id - 1)
+  watch:{
+    $route (to, from){
+      console.log(this.$route.params.id)
+      if(this.$route.params.id){
+        this.Showrouter = true;
+      }else{
+        this.Showrouter = false;
+      }
+      var id = parseInt(this.$route.params.id)
+      this.Next = '/work/' + (id + 1)
+      this.Previous = '/work/' + (id - 1)
 
-    //   if(id == '1546968934'){this.ableToPrev=false}else{this.ableToPrev=true}
-    //   if(id == '1546968939'){this.ableToNext=false}else{this.ableToNext=true}
-    //   console.log('next:'+this.Next+'previous:'+this.Previous)
-    // }
-  // }
+      if(id == '1546968934'){this.ableToPrev=false}else{this.ableToPrev=true}
+      if(id == '1546968939'){this.ableToNext=false}else{this.ableToNext=true}
+      console.log('next:'+this.Next+'previous:'+this.Previous)
+    }
+  }
 
 }
 </script>
 
 <style scoped lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap');
 
 .head{
   margin-top: 10vh;
@@ -79,9 +92,13 @@ export default {
   
 }
 h1{
-  font-family: Avenir-Medium;
+
+  font-family: 'Work Sans';
+  font-weight: 500;
+  font-size: 24px;
+  color: #2E3643;
+  letter-spacing: 0;
   font-size: 140%;
-  color: #2F3542;
 }
 .separateur{
   display: none;
@@ -138,7 +155,6 @@ h1{
   }
 
   h1{
-    font-family: Avenir-Medium;
     font-size: 18pt;
     color: #2F3542;
   }
@@ -153,14 +169,14 @@ h1{
 
   .role{
     font-family: 'Work Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 140%;
     color: #747D8C;
   }
 
   .devise{
     font-family: 'Work Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 130%;
     color: #A4B0BE;
    
