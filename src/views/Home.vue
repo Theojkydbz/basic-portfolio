@@ -59,7 +59,8 @@ export default {
 
 .intro{
     display: flex;
-    align-content: center;
+    flex-direction: column;
+    justify-content: center;
         margin-top: 15%;
         margin-left: 10%;
         margin-right: 10%;
@@ -68,26 +69,29 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        transform: translateX(-30px);
 
+        transform: translateX(-30px);
+        margin-top: 70px;
         h1{
             width:300px; 
+            width: 80%;
             margin:10px;
             font-weight: 500;
-            font-size: 50px;
+            font-size: 1.5rem;
             color: #2E3643;
             letter-spacing: 0;
+            text-align: center;
 
         }
         p{
-            
-            max-width: 90%;
+            text-align: center;  
+            width: 80%;
             opacity: 0.7;
             line-height: 1.6;
             margin:10px;
             margin-top: 0;
             font-weight: 400;
-            font-size: 18px;
+            font-size: 0.8rem;
             color: #2E3643;
             letter-spacing: 0;
         }
@@ -351,6 +355,45 @@ h1{
 
     @media only screen and (min-width : 1200px){
 
+    .intro{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+            margin-top: 15%;
+            margin-left: 10%;
+            margin-right: 10%;
+        .wrapper-text{
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transform: translateX(-30px);
+
+            h1{
+                text-align: left;
+                width:300px; 
+                margin:10px;
+                font-weight: 500;
+                font-size: 50px;
+                color: #2E3643;
+                letter-spacing: 0;
+
+            }
+            p{
+                text-align: left;
+                max-width: 90%;
+                opacity: 0.7;
+                line-height: 1.6;
+                margin:10px;
+                margin-top: 0;
+                font-weight: 400;
+                font-size: 18px;
+                color: #2E3643;
+                letter-spacing: 0;
+            }
+        }
+        
+    }
 
         
         .card-wrapper{
