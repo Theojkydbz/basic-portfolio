@@ -1,5 +1,24 @@
 <template>
+
         <div class="social">
+<div class="line">
+    <svg :opacity="opay" height="38px" viewBox="0 0 196 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <a  @mouseover="colory = '#2F3542',colory1 = '#CAD1D9', opay= .9"
+                @mouseleave="colory = '#CAD1D9',colory1 = '#2F3542', opay= 1" 
+                target="_blank" 
+                href="https://www.linkedin.com/in/theogeiller/" >
+                <g id="Group">
+                    <path :fill="colory" d="M31.6156371,0 C3.79387646,0 1.42108547e-14,3.78 1.42108547e-14,31.5 C1.42108547e-14,59.22 3.79387646,63 31.6156371,63 C32.3953966,63 165.428542,62.9970308 166.170999,62.9906485 C191.919339,62.769311 195.503534,58.4430926 195.503534,31.5 C195.503534,4.78007813 191.97847,0.303909163 166.806271,0.0157069761 C165.864121,0.00492009184 32.6193866,0 31.6156371,0 Z" id="Path-Copy" fill-rule="nonzero"></path>
+                    <text :fill="colory1" id="Resume-Copy" font-family="Manrope3-Semibold, Manrope3" font-size="25" font-weight="500" >
+                        <tspan x="47" y="40">Resume</tspan>
+                    </text>
+                </g>
+            </a>
+        </g>
+    </svg>
+</div>
+<div class="line">
             <svg :opacity="opai" width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <a  @mouseover="colori = '#2F3542',colori1 = '#CAD1D9', opai= .9"
@@ -77,6 +96,7 @@
                     </a>
                 </g>
             </svg>
+</div>
         </div>
     
 </template>
@@ -85,6 +105,7 @@
 export default {
     data() {
         return {
+            opay: '',
             opai: '',
             opab: '',
             opag: '',
@@ -100,7 +121,10 @@ export default {
             colorg1: '#2F3542',
 
             colorl:'#CAD1D9',
-            colorl1: '#2F3542'
+            colorl1: '#2F3542',
+
+            colory:'#CAD1D9',
+            colory1: '#2F3542'
         };
     },
 
@@ -141,4 +165,5 @@ export default {
     }
 
 }
+
 </style>

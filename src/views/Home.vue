@@ -3,14 +3,14 @@
         <div class="column is-9">
             <div v-if="!isFetching">
                 <section class="intro">
-                    <img src="@/assets/Home/Illustration.svg" alt="">
+                    <img class="illustration" src="@/assets/Home/Illustration.svg" alt="">
                     <div class="wrapper-text">
                         <h1>Théo Geiller</h1>
                         <p>Product Designer Student who bla bla bla blabla et blabla blablabla Design</p>
                     </div>
                 </section>
                 <div v-for="(section, index) in Object.keys(entries)" :key="index">
-                    <h1 id="Casestudies">{{section}}</h1>
+                    <h1 id="section">{{section}}</h1>
                     <div class="card-wrapper">
                         <div v-for="entry in entries[section]" :key="entry.id" class="card" @click="$router.push({name: entry.id})">
                             <div class="card-top">
@@ -56,10 +56,10 @@ export default {
   background: rgb(255, 255, 255);
 }
 
-
 .intro{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
         margin-top: 15%;
         margin-left: 10%;
@@ -68,16 +68,17 @@ export default {
 
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
 
-        transform: translateX(-30px);
         margin-top: 70px;
+
         h1{
             width:300px; 
             width: 80%;
             margin:10px;
             font-weight: 500;
-            font-size: 1.5rem;
+            font-size: 2rem;
             color: #2E3643;
             letter-spacing: 0;
             text-align: center;
@@ -91,7 +92,7 @@ export default {
             margin:10px;
             margin-top: 0;
             font-weight: 400;
-            font-size: 0.8rem;
+            font-size: 1.3rem;
             color: #2E3643;
             letter-spacing: 0;
         }
@@ -132,7 +133,7 @@ h1{
         display: grid;
         grid-template-columns: 2fr;
         
-        border-radius: 2.5vh;
+        border-radius: 2rem;
         overflow: hidden;
 
         width: 80vw;
@@ -177,11 +178,12 @@ h1{
                 font-weight: 500;
                 font-size: 1rem; 
                 text-transform: uppercase;
-                color: rgba(255,255,255, 0.7)
+                color: rgba(255,255,255, 0.7);
+                margin-top:10%;
             }
             .text .name{
                 text-transform: capitalize;
-                font-size: 3rem; 
+                font-size: 2rem; 
                 font-weight: 600;
                 padding-top: 0;
                 margin-top:0;
@@ -190,9 +192,9 @@ h1{
                 position: absolute;
                 font-family: 'Work Sans', sans-serif;
                 font-weight: 400;
-                font-size: 2rem; 
+                font-size: 1.2rem; 
                 top: 110px;
-                width: 480px;
+                padding-top: 200px;
             }
         }
         
@@ -220,6 +222,7 @@ h1{
     }
 
         .card {
+            border-radius: 1.5rem;
             overflow: hidden;
             z-index: 1;
             background-color: #ffffff;
@@ -296,6 +299,7 @@ h1{
     }
 
         .card {
+            border-radius: 1.2rem;
             overflow: hidden;
             z-index: 1;
             background-color: #ffffff;
@@ -367,6 +371,7 @@ h1{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: stretch;
             transform: translateX(-30px);
 
             h1{
@@ -410,6 +415,7 @@ h1{
         }
 
         .card {
+
             overflow: hidden;
             z-index: 1;
             background-color: #ffffff;

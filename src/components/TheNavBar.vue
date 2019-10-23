@@ -16,15 +16,15 @@
             <div class="line">
             <ul>
               <li>
-                <a href="/">Back</a>
+                <a href="/"></a>
               </li>
             </ul>
             </div>
           </div>
         </div>
-        <div class="line">
+         
+        
           <Social />
-        </div>
       </div>
     </div>
   </div>
