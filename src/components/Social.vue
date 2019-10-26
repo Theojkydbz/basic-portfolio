@@ -2,7 +2,7 @@
 
         <div class="social">
 <div class="line">
-    <svg :opacity="opay" height="38px" viewBox="0 0 196 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg :opacity="opay" height="50px" viewBox="0 0 196 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <a  @mouseover="colory = '#2F3542',colory1 = '#CAD1D9', opay= .9"
                 @mouseleave="colory = '#CAD1D9',colory1 = '#2F3542', opay= 1" 
@@ -19,7 +19,7 @@
     </svg>
 </div>
 <div class="line">
-            <svg :opacity="opai" width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg :opacity="opai" height="50px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <a  @mouseover="colori = '#2F3542',colori1 = '#CAD1D9', opai= .9"
                         @mouseleave="colori = '#CAD1D9',colori1 = '#2F3542',opai= 1" 
@@ -40,7 +40,7 @@
             </svg>
 
 
-            <svg :opacity="opab" width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg :opacity="opab"  height="50px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <a  @mouseover="colorb = '#2F3542',colorb1 = '#CAD1D9', opab= .9"
                         @mouseleave="colorb = '#CAD1D9',colorb1 = '#2F3542',opab= 1" 
@@ -58,7 +58,7 @@
                 </g>
             </svg>
 
-            <svg :opacity="opag" width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg :opacity="opag"  height="50px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <a  @mouseover="colorg = '#2F3542',colorg1 = '#CAD1D9', opag= .9"
                         @mouseleave="colorg = '#CAD1D9',colorg1 = '#2F3542',opag= 1" 
@@ -77,7 +77,7 @@
             </svg>
 
 
-            <svg :opacity="opal" width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg :opacity="opal"  height="50px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <a  @mouseover="colorl = '#2F3542',colorl1 = '#CAD1D9', opal= .9"
                         @mouseleave="colorl = '#CAD1D9',colorl1 = '#2F3542',opal= 1" 
@@ -146,7 +146,7 @@ export default {
     .line *{
 
         margin: 0 0 0 0;
-        padding: 5px;
+        padding: 2px;
         display: inline-block; 
 
     }

@@ -18,6 +18,15 @@ export default{
 
 </script>
 <style lang="scss">
+@font-face {
+  font-family: "Manrope Medium";
+  src: url("/assets/fonts/manrope-medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Manrope Semibold";
+  src: url("/assets/fonts/manrope-semibold.woff2") format("woff2");
+}
+
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,6 +42,8 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+
 
 
 

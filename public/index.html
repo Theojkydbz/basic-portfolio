@@ -9,6 +9,15 @@
     <meta name="description" lang='en' content="Théo GEILLER, student in digital product design, passionate about experience design, user-centric interaction and creative code." />
   </head>
   <body>
+      <script>
+          function initFreshChat() {
+            window.fcWidget.init({
+              token: "7b8f70cc-8e70-4531-b09f-5e8f95b17573",
+              host: "https://wchat.freshchat.com"
+            });
+          }
+          function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+        </script>
     <noscript>
       <strong>We're sorry but basic-portfolio doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>

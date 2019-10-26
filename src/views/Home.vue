@@ -14,7 +14,7 @@
                     <div class="card-wrapper">
                         <div v-for="entry in entries[section]" :key="entry.id" class="card" @click="$router.push({name: entry.id})">
                             <div class="card-top">
-                                <div class="img"> </div>
+                                <div class="img" :style="{'background-image': `url(${entry.img})`}"> </div>
                                 <div class="text">
                                     <p class="metier">Product design</p>
                                     <h2 class="name">{{entry.title}}</h2>
@@ -30,6 +30,7 @@
 </template>
 
 <script>
+
 import BLOGENTRIES from '@/statics/data/blogs.json'
 // @ is an alias to /src
 import Vue from 'vue'
@@ -44,11 +45,22 @@ export default {
     entries() {
       return BLOGENTRIES
     }
+  },
+  created () {
+      console.log('entri: '+ BLOGENTRIES)
   }
 }
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: "Manrope Medium";
+  src: url("../assets/fonts/manrope-medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Manrope Semibold";
+  src: url("../assets/fonts/manrope-semibold.woff2") format("woff2");
+}
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap');
 
  html,body {
@@ -64,6 +76,9 @@ export default {
         margin-top: 15%;
         margin-left: 10%;
         margin-right: 10%;
+    img{
+        width: 80vw;
+    }
     .wrapper-text{
 
         display: flex;
@@ -96,6 +111,7 @@ export default {
             color: #2E3643;
             letter-spacing: 0;
         }
+        
     }
     
 }
@@ -117,11 +133,12 @@ export default {
 
 }
 
-h1{
+h1#section{
   margin-top: 20vh;
   margin-left: 10%;
   margin-bottom: 5%;
-  text-align: left
+  text-align: left;
+  font-family: Manrope Medium;
 
 }
 
@@ -133,7 +150,7 @@ h1{
         display: grid;
         grid-template-columns: 2fr;
         
-        border-radius: 2rem;
+        border-radius: 1.3rem;
         overflow: hidden;
 
         width: 80vw;
@@ -154,10 +171,9 @@ h1{
             .img{
                 width: 100%;
                 height: 100%;
-                background-image: url('../assets/proj1/cover.png');
                 background-position: center;
                 background-size: cover;
-
+                background-image: url('../assets/smartimer/cover.png');
                 background-size: auto 100%;
                 background-repeat:no-repeat;
                 background-position: center top;
@@ -201,7 +217,7 @@ h1{
     }
     @media only screen and (min-width : 730px){
 
-    h1{
+    h1#section{
       margin-top: 20vh;
       margin-left: 10%;
       margin-bottom: 3%;
@@ -220,6 +236,11 @@ h1{
         margin-bottom: 10%;
 
     }
+    .intro{
+        img{
+        width: auto;
+        }
+    }
 
         .card {
             border-radius: 1.5rem;
@@ -235,7 +256,6 @@ h1{
                 .img{
                     width: 100%;
                     height: 100%;
-                    background-image: url('../assets/proj1/cover.png');
                     background-position: center;
                     background-size: cover;
 
@@ -312,7 +332,6 @@ h1{
                 .img{
                     width: 100%;
                     height: 100%;
-                    background-image: url('../assets/proj1/cover.png');
                     background-position: center;
                     background-size: cover;
 
@@ -428,7 +447,6 @@ h1{
                 .img{
                     width: 100%;
                     height: 100%;
-                    background-image: url('../assets/proj1/cover.png');
                     background-position: center;
                     background-size: cover;
 
@@ -494,7 +512,6 @@ h1{
                 .img{
                     width: 100%;
                     height: 100%;
-                    background-image: url('../assets/proj1/cover.png');
                     background-position: center;
                     background-size: cover;
 
