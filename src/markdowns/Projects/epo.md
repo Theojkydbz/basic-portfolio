@@ -31,9 +31,9 @@
 ## Software Prototype
 <iframe width="320"
         height="568"
-        style="'position':'relative'"
-        src="https://theojkydbz.github.io/ProjetLong/">
-
+        src="https://theojkydbz.github.io/ProjetLong/"></iframe>
+        
+<a class='mobileview' target="_blank" href="https://theojkydbz.github.io/ProjetLong/">Mobile Prototype (optimized for Iphone SE)</a>
 
 
 ## Concept

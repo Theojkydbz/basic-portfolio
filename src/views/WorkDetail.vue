@@ -76,10 +76,13 @@ export default {
       margin-bottom: 20px;
     }
     iframe{
-      margin-left:-40px;
+      display:none;
     }
     @media only screen and (min-width : 730px){
       .back{
+        display:none;
+      }
+      .mobileview{
         display:none;
       }
       p{
@@ -87,6 +90,7 @@ export default {
       line-height:28px;
       }
       iframe{
+        display:block;
         margin-left:0px;
       }
     }
