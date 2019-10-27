@@ -1,0 +1,35 @@
+
+<svg width="71px" height="81px" viewBox="0 0 71 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter x="-29.6%" y="-29.6%" width="159.3%" height="159.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="54" height="54" rx="27"></rect>
+        <filter x="-2.8%" y="-2.8%" width="105.6%" height="105.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.099104021 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-SE-Copy" transform="translate(0.000000, -570.000000)">
+            <g id="Group-3" transform="translate(-92.000000, 568.000000)">
+                <path d="M14.4339094,16.4304239 C39.3406287,17.546086 51.7939884,12.9204705 51.7939884,2.55357719 C51.7939884,-7.81331608 82.4765875,13.385062 143.841786,66.1487115 C82.4765875,84.6031594 51.7939884,90.1916284 51.7939884,82.9141185 C51.7939884,71.9978536 45.8409679,69.5198147 15.4530818,69.5198147 C-4.80550901,69.5198147 -5.14523313,51.8233511 14.4339094,16.4304239 Z" id="Path-2-Copy" fill="#F5F5F5" transform="translate(71.920893, 43.000728) scale(-1, 1) translate(-71.920893, -43.000728) "></path>
+                <g id="Group" filter="url(#filter-1)" transform="translate(101.000000, 16.000000)">
+                    <g id="Rectangle">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    </g>
+                    <path d="M25.9971047,16.5751831 C25.9980698,16.5751828 25.9990349,16.5751827 26,16.5751827 C31.5228475,16.5751827 36,21.0523352 36,26.5751827 C36,32.0980302 31.5228475,36.5751827 26,36.5751827 C20.4771525,36.5751827 16,32.0980302 16,26.5751827 L19.75,26.5751827 C19.75,30.0269624 22.5482203,32.8251827 26,32.8251827 C29.4517797,32.8251827 32.25,30.0269624 32.25,26.5751827 C32.25,23.123403 29.4517797,20.3251827 26,20.3251827 C25.9990349,20.3251827 25.9980698,20.3251829 25.9971047,20.3251834 L25.9971047,23.6944322 L20.5071759,18.8472161 L25.9971047,14 L25.9971047,16.5751831 Z" id="Combined-Shape" fill="#0652DD" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -14,7 +14,7 @@
                     <div class="card-wrapper">
                         <div v-for="entry in entries[section]" :key="entry.id" class="card" @click="$router.push({name: entry.id})">
                             <div class="card-top">
-                                <div class="img" :style="{'background-image': `url(${entry.img})`}"> </div>
+                                <div class="img" :style="{'background-image':`linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(${entry.img})`}"> </div>
                                 <div class="text">
                                     <p class="metier">Product design</p>
                                     <h2 class="name">{{entry.title}}</h2>
@@ -47,7 +47,10 @@ export default {
     }
   },
   created () {
-      console.log('entri: '+ BLOGENTRIES)
+    let scrollY = document.body.style.top
+    document.body.style.position = '0';
+    document.body.style.top = '0';
+    window.scrollTo(0, parseInt(scrollY) * -1);
   }
 }
 </script>

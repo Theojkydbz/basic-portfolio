@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>COMMENT_EPO</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="bg">
+        <img class="navbar" src="./SVG/comment/nav.svg" alt="">
+            <ul class="commentnav">
+                <li class="back">
+                    <a href="./content.html">
+                        <img src="./SVG/comment/back.svg" alt="">
+                    </a>
+                </li>
+                <li class="time">
+                    <a href="">
+                        <img src="./SVG/comment/time.svg" alt="">
+                    </a>
+                </li>
+                
+            </ul>
+            <ul class='filter'>
+                <li class="filtercons">
+                    <a href="#cons">
+                        <img src="./SVG/comment/filtercons.svg" alt="">
+                    </a>
+                </li>
+                <li id='filterpro' class="filterpros">
+                    <a href="#pros">
+                        <img src="./SVG/comment/filterpros.svg" alt="">
+                    </a>
+                </li>
+                <li id='filterpro' class="hide">
+                    <a href="#pros">
+                        <img src="./SVG/comment/filterprosactive.svg" alt="">
+                    </a>
+                </li>
+                <li id='filterall' class="filterall">
+                    <a href="#all">
+                        <img src="./SVG/comment/filterallactive.svg" alt="">
+                    </a>
+                </li>
+                <li id='filterall' class="hide">
+                    <a href="#all">
+                        <img src="./SVG/comment/filterallactive.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <p class="comment" >un problème qui divise les français. Peut-être plus encore que le clivage gauche-droite</p>
+            <a href="./havepoll.html">
+                <img class="pros" src="./SVG/comment/pros.svg" alt="">
+            </a>
+            <a href="./havepoll.html">
+                <img class="cons" src="./SVG/comment/cons.svg" alt="">
+            </a>
+            <a href="./sarahprofil.html">
+                <img class="firstcomment" src="./SVG/comment/commentpro.svg" alt="">
+            </a>
+            <img class="comment" src="./SVG/comment/commentcons.svg" alt="">
+            <img class="comment" src="./SVG/comment/commentneutre.svg" alt="">
+            <img class="comment" src="./SVG/comment/commentpros2.svg" alt="">
+            <img class="lastcomment" src="./SVG/comment/commentcons2.svg" alt="">
+
+            <div class="comment-bar">
+                <input class="comment-bar-input" placeholder="Écris un commentaire…">
+                <button id="comment" class="comment-bar-button">Envoyer</button>
+            </div>
+            <div id="choicecolor" class="choicecolor">
+                <img src="./SVG/comment/choicecomment.svg" alt="">
+            </div>
+            <img class="mask" src="./SVG/comment1/mask.svg" alt="">
+            <p class="alert">10 minutes se sont écoulées</p>
+            <a href="./index.html">
+                <img class="stop" src="./SVG/comment1/stop.svg" alt="">
+            </a>
+            <a href="./comment.html">
+                <img class="ok" src="./SVG/comment1/ok.svg" alt="">
+            </a>
+
+
+    </div>
+</body>
+
+<script>
+        var sendbutton = document.querySelector('#comment');
+        var choice = document.querySelector('#choicecolor');
+        
+    
+    // show or hide
+        sendbutton.addEventListener('click',function(){
+                choice.classList.toggle('hider');
+                choice.classList.toggle('choicecolor');
+        });
+        choice.addEventListener('click',function(){
+                choice.classList.toggle('hider');
+                choice.classList.toggle('choicecolor');
+        });
+    
+    
+    </script>
+    <script>
+            var filterall1 = document.querySelector('#filterall');
+            var filterpro1 = document.querySelector('#filterpro');
+            
+        
+        // show or hide
+            // filterall1.addEventListener('click',function(){
+            //         filterall1.classList.toggle('filterall');
+            //         filterall1.classList.toggle('hide');
+                    
+            // });
+            // filterpro1.addEventListener('click',function(){
+            //         filterpro1.classList.toggle('filterpros');
+            //         filterpro1.classList.toggle('hide');
+                    
+            // });
+        
+        
+        </script>

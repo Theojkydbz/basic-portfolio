@@ -1,0 +1,23 @@
+
+<svg width="117px" height="46px" viewBox="0 0 117 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="filter/timer">
+            <g id="Group">
+                <rect id="Rectangle" stroke="#CED6E0" x="0.5" y="0.5" width="116" height="28" rx="14"></rect>
+                
+                <text id="00" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" letter-spacing="-0.009301316" fill="#BCC5D0">
+                    <tspan x="59" y="20">00</tspan>
+                </text>
+                <text id="00" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" letter-spacing="-0.009301316" fill="#BCC5D0">
+                    <tspan x="11" y="20">00</tspan>
+                </text>
+                <text id="h" font-family="AvenirNext-UltraLight, Avenir Next" font-size="16" font-weight="200" letter-spacing="-0.009301315" fill="#BCC5D0">
+                    <tspan x="32" y="20">h</tspan>
+                </text>
+                <text id="min" font-family="AvenirNext-UltraLight, Avenir Next" font-size="16" font-weight="200" letter-spacing="-0.009301315" fill="#BCC5D0">
+                    <tspan x="80" y="20">min</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

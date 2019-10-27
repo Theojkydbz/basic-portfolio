@@ -1,0 +1,32 @@
+
+<svg width="177px" height="30px" viewBox="0 0 177 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="0" y="0" width="177" height="6" rx="3"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-SE-Copy-32" transform="translate(-65.000000, -171.000000)">
+            <g id="Group-7" transform="translate(-20.000000, -12.000000)">
+                <g id="Group-6">
+                    <g id="Group-2-Copy">
+                        <g id="Group-8" transform="translate(85.000000, 180.000000)">
+                            <g id="Rectangle-+-Rectangle-Copy-4-Mask" transform="translate(0.000000, 27.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                                <polygon id="Rectangle" fill="#EB4D4B" mask="url(#mask-2)" points="0 0 108 0 108 6 0 6"></polygon>
+                                <rect id="Rectangle-Copy-4" fill="#4BD287" mask="url(#mask-2)" x="120" y="-1" width="120" height="7"></rect>
+                            </g>
+                            <text id="63%" font-family="AvenirNext-Medium, Avenir Next" font-size="16" font-weight="400" letter-spacing="-0.01046398" fill="#FA333A">
+                                <tspan x="45.035696" y="16">63%</tspan>
+                            </text>
+                            <text id="29%" font-family="AvenirNext-Medium, Avenir Next" font-size="16" font-weight="400" letter-spacing="-0.01046398" fill="#4CD589">
+                                <tspan x="133.035696" y="16">29%</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+
+<svg width="30px" height="31px" viewBox="0 0 30 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-SE-Copy-29" transform="translate(-118.000000, -179.000000)">
+            <g id="Group-2-Copy" transform="translate(27.000000, 104.000000)">
+                <g id="Group" transform="translate(1.000000, 0.000000)">
+                    <g id="icon/numberwrite" transform="translate(90.000000, 76.000000)">
+                        <g id="icon/write/16x16" fill="#CED6E0">
+                            <path d="M15.5842834,3.75 L3.75,3.75 L3.75,26.25 L26.25,26.25 L26.25,11.1908851 L30,7.44088514 L30,26.25 C30,28.3210678 28.3210678,30 26.25,30 L3.75,30 C1.67893219,30 2.53632657e-16,28.3210678 0,26.25 L0,3.75 C-2.53632657e-16,1.67893219 1.67893219,-1.39590785e-15 3.75,-1.77635684e-15 L19.3342834,-1.77635684e-15 L15.5842834,3.75 Z" id="Combined-Shape"></path>
+                            <path d="M24.5680406,-0.0695436483 L28.4571279,3.81954365 C28.8476522,4.21006794 28.8476522,4.84323292 28.4571279,5.23375721 L17.2318078,16.4590774 L11.9285069,11.1557765 L23.1538271,-0.0695436483 C23.5443514,-0.46006794 24.1775163,-0.46006794 24.5680406,-0.0695436483 Z" id="Combined-Shape"></path>
+                            <polygon id="Path-2" points="11.25 11.9252621 10.0223224 18.4322209 16.4341057 17.2045432"></polygon>
+                        </g>
+                        <text id="0" font-family="AvenirNext-Regular, Avenir Next" font-size="12" font-weight="normal" letter-spacing="-0.007847983" fill="#9B9B9B">
+                            <tspan x="11" y="19">0</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

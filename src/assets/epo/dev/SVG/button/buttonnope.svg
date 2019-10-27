@@ -1,0 +1,33 @@
+
+
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter x="-29.6%" y="-29.6%" width="159.3%" height="159.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="54" height="54" rx="27"></rect>
+        <filter x="-2.8%" y="-2.8%" width="105.6%" height="105.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.099104021 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="button/rect/nope" transform="translate(8.000000, 8.000000)">
+            <g id="Group" filter="url(#filter-1)">
+                <g id="Rectangle">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                </g>
+            </g>
+            <path d="M26.6070472,23.1830532 L32.4296598,17.2490593 C33.3966777,16.2635433 34.9795191,16.2485476 35.9650351,17.2155654 C36.9505511,18.1825833 36.9655468,19.7654247 35.998529,20.7509407 L30.1095572,26.752563 L35.998529,32.7541854 C36.9655468,33.7397014 36.9505511,35.3225428 35.9650351,36.2895606 C34.9795191,37.2565785 33.3966777,37.2415827 32.4296598,36.2560667 L26.6070472,30.3220729 L20.7844346,36.2560667 C19.8174167,37.2415827 18.2345753,37.2565785 17.2490593,36.2895606 C16.2635433,35.3225428 16.2485476,33.7397014 17.2155654,32.7541854 L23.1045372,26.752563 L17.2155654,20.7509407 C16.2485476,19.7654247 16.2635433,18.1825833 17.2490593,17.2155654 C18.2345753,16.2485476 19.8174167,16.2635433 20.7844346,17.2490593 L26.6070472,23.1830532 Z" id="Combined-Shape" fill="#F83462" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

@@ -3,16 +3,16 @@
 ## Overview
 I was involved with a friend in Samsung Mobile Design Competition. For this entry, the brief was simple. The goal was to create a new little object device for Samsung. We decided to participate and create this concept in 24 hours. I took care of of the whole interface and reflection around this subject that we chose, also the form. and Pierre Damien Doucet of the formal design, modeling and rendering of the connected object.
 
+
 - ### Team 
 - [Pierre-Damien Doucet / Industrial design](https://pierredoucet.com/)
 - [Théo Geiller / Product design]()
 
 - ### Timeline
 - 48 hours
- 
+
 - ### Role
 - Product designer
-- User Researcher
 - UX/UI Designer
 - Interaction Designer
  

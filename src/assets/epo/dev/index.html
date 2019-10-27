@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>APP_EPO</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="style1.scss" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <nav>
+            <img class="bar" src="./SVG/toggle/bar.svg" alt="">
+
+        <ul id="toggle">
+            <li>
+                <a href="./content.html" class="card hidetogglecard">
+                    <img src="./SVG/toggle/card.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#list" class="list">
+                    <img src="./SVG/toggle/list.svg" alt="">
+                </a>
+            </li>
+            
+        </ul>
+
+        
+
+        <ul class="icon">
+            <li>
+                <a href="#search">
+                    <img src="./SVG/search.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./profil.html">
+                    <img src="./SVG/profil.svg" alt="">
+                </a>
+            </li>
+        </ul>
+        
+    </nav>
+
+    <section id="page" class="hide">
+            
+        
+            <div id="cardback2"></div>
+            <div id="cardback1"></div>
+            <style>
+                    
+              
+              
+              
+              .demo {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 30.6rem;
+                height: 54rem;
+                margin-left: -15.3rem;
+                margin-top: -27rem;
+                background: #F6F6F5;
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+              }
+              .demo__header {
+                height: 6rem;
+                background: #002942;
+              }
+              .demo__content {
+                overflow: hidden;
+                position: relative;
+                height: 48rem;
+                padding-left: 8%;
+                -webkit-user-select: none;
+                   -moz-user-select: none;
+                    -ms-user-select: none;
+                        user-select: none;
+              }
+              .demo__card-cont {
+                position: fixed;
+                width: 24rem;
+                height: 32rem;
+                margin: 0 auto 5rem;
+              }
+              .demo__card {
+                z-index: 2;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 80%;
+                height: 60%;
+                -webkit-transform-origin: 50% 100%;
+                        transform-origin: 50% 100%;
+              }
+              .demo__card.reset {
+                transition: -webkit-transform 0.3s;
+                transition: transform 0.3s;
+                transition: transform 0.3s, -webkit-transform 0.3s;
+                -webkit-transform: translateX(0) !important;
+                        transform: translateX(0) !important;
+              }
+              .demo__card.reset .demo__card__choice {
+                transition: opacity 0.3s;
+                opacity: 0 !important;
+              }
+              .demo__card.inactive {
+                transition: -webkit-transform 0.3s;
+                transition: transform 0.3s;
+                transition: transform 0.3s, -webkit-transform 0.3s;
+              }
+              .demo__card.to-left {
+                -webkit-transform: translateX(-30rem) rotate(-30deg) !important;
+                        transform: translateX(-30rem) rotate(-30deg) !important;
+              }
+              .demo__card.to-right {
+                -webkit-transform: translate(30rem) rotate(30deg) !important;
+                        transform: translate(30rem) rotate(30deg) !important;
+              }
+              .demo__card.below {
+                z-index: 1;
+              }
+              .demo__card__top {
+                height: 20.5rem;
+                padding-top: 4rem;
+              }
+              .demo__card__top.purple {
+                background: #7132B9;
+              }
+              .demo__card__top.blue {
+                background: #248CB6;
+              }
+              .demo__card__top.indigo {
+                background: #303F9F;
+              }
+              .demo__card__top.cyan {
+                background: #26C6DA;
+              }
+              .demo__card__top.lime {
+                background: #AFB42B;
+              }
+              .demo__card__top.brown {
+                background: #795548;
+              }
+              .demo__card__img {
+                overflow: hidden;
+                width: 10rem;
+                height: 10rem;
+                margin: 0 auto 1.5rem;
+                border-radius: 50%;
+                border: 0.5rem solid #ffffff;
+                background-size: cover;
+              }
+              .demo__card__name {
+                text-align: center;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #fff;
+              }
+              .demo__card__btm {
+                height: 11.5rem;
+                background: #FFFFFF;
+              }
+              .demo__card__we {
+                text-align: center;
+                font-size: 2.2rem;
+                line-height: 11.5rem;
+              }
+              .demo__card__choice {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 85.5%;
+                height: 119%;
+                opacity: 0;
+                border-radius: 10px;
+              }
+              .demo__card__choice:before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 1.8rem;
+                height: 1.8rem;
+                margin-left: -1rem;
+                color: #fff;
+                border-radius: 50%;
+                box-shadow: -2rem -3rem #fff, 2rem -3rem #fff;
+              }
+              .demo__card__choice:after {
+                content: "";
+                position: absolute;
+                left: 46%;
+                top: 50%;
+                width: 4rem;
+                height: 1.5rem;
+                margin-left: -2rem;
+                border: 0.6rem solid #fff;
+                border-bottom: none;
+                border-top-left-radius: 10rem;
+                border-top-right-radius: 10rem;
+              }
+              .demo__card__choice.m--reject {
+                background: rgba(248, 52, 98, 0.534);
+              }
+              .demo__card__choice.m--like {
+                background: rgba(76, 213, 138, 0.534);
+              }
+              .demo__card__choice.m--like:after {
+                -webkit-transform: scaleY(-1);
+                        transform: scaleY(-1);
+              }
+              .demo__card__drag {
+                z-index: 5;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                cursor: -webkit-grab;
+                cursor: grab;
+              }
+              .demo__tip {
+                text-align: center;
+                font-size: 2.2rem;
+              }
+              div.demo__card img{
+                  height: 120%;
+
+              }
+                  </style>
+            
+        </head>
+        
+        <body>
+            
+               
+                        <div class="demo__content">
+                          <div class="demo__card-cont">
+                              <div class="demo__card">
+                                <img src="./IMG/card/article/card1.png" alt="">
+                                <div class="demo__card__choice m--reject"></div>
+                                <div class="demo__card__choice m--like"></div>
+                                <div class="demo__card__drag"></div>
+                              </div>
+                              <div class="demo__card">
+                                <img src="./IMG/card/article/card1.png" alt="">
+                                <div class="demo__card__choice m--reject"></div>
+                                <div class="demo__card__choice m--like"></div>
+                                <div class="demo__card__drag"></div>
+                              </div>
+                              <div class="demo__card">
+          
+                                  <img src="./IMG/card/article/card2.png" alt="">
+                                  <div class="demo__card__choice m--reject"></div>
+                                  <div class="demo__card__choice m--like"></div>
+                                  <div class="demo__card__drag"></div>
+                              </div>
+                              <div class="demo__card">
+          
+                                  <img src="./IMG/card/article/card3.png" alt="">
+                                  <div class="demo__card__choice m--reject"></div>
+                                  <div class="demo__card__choice m--like"></div>
+                                  <div class="demo__card__drag"></div>
+                              </div>
+                              <div class="demo__card">
+          
+                                  <img src="./IMG/card/article/card4.png" alt="">
+                                  <div class="demo__card__choice m--reject"></div>
+                                  <div class="demo__card__choice m--like"></div>
+                                  <div class="demo__card__drag"></div>
+                              </div>
+                              <div class="demo__card">
+          
+                                <img src="./IMG/card/article/card2.png" alt="">
+                                <div class="demo__card__choice m--reject"></div>
+                                <div class="demo__card__choice m--like"></div>
+                                <div class="demo__card__drag"></div>
+                            </div>
+                              <div class="demo__card">
+          
+                                  <img src="./IMG/card/article/card5.png" alt="">
+                                  <div class="demo__card__choice m--reject"></div>
+                                  <div class="demo__card__choice m--like"></div>
+                                  <div class="demo__card__drag"></div>
+                              </div>
+                              <div class="demo__card">
+          
+                                  <img src="./IMG/card/article/card6.png" alt="">
+                                  <div class="demo__card__choice m--reject"></div>
+                                  <div class="demo__card__choice m--like"></div>
+                                  <div class="demo__card__drag"></div>
+                              </div>
+                              <div class="demo__card">
+          
+                                <img src="./IMG/card/article/card7.png" alt="">
+                                <div class="demo__card__choice m--reject"></div>
+                                <div class="demo__card__choice m--like"></div>
+                                <div class="demo__card__drag"></div>
+                            </div>
+                            <div class="demo__card">
+                              <img src="./IMG/card/article/card1.png" alt="">
+                              <div class="demo__card__choice m--reject"></div>
+                              <div class="demo__card__choice m--like"></div>
+                              <div class="demo__card__drag"></div>
+                            </div>
+                            
+                          </div>
+                        
+            
+        
+        </body>
+        
+        
+        <script type="text/javascript">
+        $(document).ready(function() {
+        
+        var animating = false;
+        var cardsCounter = 0;
+        var numOfCards = 6;
+        var decisionVal = 80;
+        var pullDeltaX = 0;
+        var deg = 0;
+        var $card, $cardReject, $cardLike;
+        
+        function pullChange() {
+          animating = true;
+          deg = pullDeltaX / 10;
+          $card.css("transform", "translateX("+ pullDeltaX +"px) rotate("+ deg +"deg)");
+        
+          var opacity = pullDeltaX / 100;
+          var rejectOpacity = (opacity >= 0) ? 0 : Math.abs(opacity);
+          var likeOpacity = (opacity <= 0) ? 0 : opacity;
+          $cardReject.css("opacity", rejectOpacity);
+          $cardLike.css("opacity", likeOpacity);
+        };
+        
+        function release() {
+        
+          if (pullDeltaX >= decisionVal) {
+            $card.addClass("to-right");
+          } else if (pullDeltaX <= -decisionVal) {
+            $card.addClass("to-left");
+          }
+        
+          if (Math.abs(pullDeltaX) >= decisionVal) {
+            $card.addClass("inactive");
+        
+            setTimeout(function() {
+              $card.addClass("below").removeClass("inactive to-left to-right");
+              cardsCounter++;
+              if (cardsCounter === numOfCards) {
+                cardsCounter = 0;
+                $(".demo__card").removeClass("below");
+              }
+            }, 300);
+          }
+        
+          if (Math.abs(pullDeltaX) < decisionVal) {
+            $card.addClass("reset");
+          }
+        
+          setTimeout(function() {
+            $card.attr("style", "").removeClass("reset")
+              .find(".demo__card__choice").attr("style", "");
+        
+            pullDeltaX = 0;
+            animating = false;
+          }, 300);
+        };
+        
+        $(document).on("mousedown touchstart", ".demo__card:not(.inactive)", function(e) {
+          if (animating) return;
+        
+          $card = $(this);
+          $cardReject = $(".demo__card__choice.m--reject", $card);
+          $cardLike = $(".demo__card__choice.m--like", $card);
+          var startX =  e.pageX || e.originalEvent.touches[0].pageX;
+        
+          $(document).on("mousemove touchmove", function(e) {
+            var x = e.pageX || e.originalEvent.touches[0].pageX;
+            pullDeltaX = (x - startX);
+            if (!pullDeltaX) return;
+            pullChange();
+          });
+        
+          $(document).on("mouseup touchend", function() {
+            $(document).off("mousemove touchmove mouseup touchend");
+            if (!pullDeltaX) return; // prevents from rapid click events
+            release();
+          });
+        });
+        
+        });
+        </script>
+
+        <ul class="tabbar">
+             <li>
+                <a href="#return">
+                    <img src="./SVG/button/buttonreturn.svg" alt="">
+                </a>
+                
+            </li>
+            <li class="nope">
+                <a href="#nope">
+                    <img src="./SVG/button/buttonnope.svg" alt="">
+                </a>
+            </li>
+            <li class="read">
+                <a href="./content.html">
+                    <img src="./SVG/button/buttonread.svg" alt="">
+                </a>
+            </li>
+            <li class="write">
+                <a href="#write">
+                    <img src="./SVG/button/buttonwrite.svg" alt="">
+                </a>
+            </li>
+        </ul>
+       
+
+    </section>
+
+    <section id="page1" class="">
+
+        <ul class="tabbar">
+            <li class="write">
+                <a href="#write">
+                    <img src="./SVG/button/buttonwrite.svg" alt="">
+                </a>
+            </li>
+        </ul>
+
+        <ul class="menulist">
+            <li>
+                <section>
+                    <a href="#foryou" class="category">For you
+                        <img src="./SVG/arrow.svg" alt="">
+                    </a>
+                    <div class="horizontalscroll">
+                        <ul class="item-list">
+                            <a href="./content.html">
+                                <li>
+                                    <img src="./IMG/list/article/un.png" alt="">
+                                </li>
+                            </a>
+                            <a href="./content.html">
+                                <li>
+                                    <img src="./IMG/list/article/deux.png" alt="">
+                                </li>
+                            </a>
+                            <a href="./content.html">
+                                <li>
+                                    <img src="./IMG/list/article/trois.png" alt="">
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+
+                </section>
+            </li>
+            <li>
+                <section>
+                    <a href="#popular" class="category">Popular
+                        <img src="./SVG/arrow.svg" alt="">
+                    </a>
+                    <div class="horizontalscroll">
+                        <ul class="item-list">
+                                <a href="./content.html">
+                                    <li>
+                                        <img src="./IMG/list/article/trois.png" alt="">
+                                    </li>
+                                </a>
+                                <a href="./content.html">
+                                    <li>
+                                        <img src="./IMG/list/article/un.png" alt="">
+                                    </li>
+                                </a>
+                                <a href="./content.html">
+                                    <li>
+                                        <img src="./IMG/list/article/deux.png" alt="">
+                                    </li>
+                                </a>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+            <li>
+                <section>
+                    <a href="#recent" class="category">Recent
+                        <img src="./SVG/arrow.svg" alt="">
+                    </a>
+                    <div class="horizontalscroll">
+                        <ul class="item-list">
+                                <a href="./content.html">
+                                    <li>
+                                        <img src="./IMG/list/article/deux.png" alt="">
+                                    </li>
+                                </a>
+                                <a href="./content.html">
+                                    <li>
+                                        <img src="./IMG/list/article/trois.png" alt="">
+                                    </li>
+                                </a>
+                                <a href="./content.html">
+                                    <li>
+                                        <img src="./IMG/list/article/un.png" alt="">
+                                    </li>
+                                </a>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+            <li>
+                <section>
+                    <a ref="#recentopinion" class="category">Recent opinion
+                        <img src="./SVG/arrow.svg" alt="">
+                    </a>
+                    <div class="horizontalscroll">
+                        <ul class="item-list">
+                            <a href="#card">
+                                <li>
+                                    <img src="./SVG/list/opinionun.svg" alt="">
+                                </li>
+                            </a>
+                            <a href="#card">
+                                <li>
+                                    <img src="./SVG/list/opiniontrois.svg" alt="">
+                                </li>
+                            </a>
+                            <a href="#card">
+                                <li>
+                                    <img src="./SVG/list/opiniondeux.svg" alt="">
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+        </ul>
+        
+    </section>
+    
+    
+    
+
+</body>
+
+
+<script>
+	var Togglebutton = document.querySelector('#toggle');
+    var buttonlist = document.querySelector('.list');
+    var buttoncard = document.querySelector('.card');
+	var Toggle = document.querySelector('#page');
+    var Toggle1 = document.querySelector('#page1');
+    var boddy = document.querySelector('body');
+
+// show or hide
+    Togglebutton.addEventListener('click',function(){
+			Toggle.classList.toggle('hide');
+            Toggle1.classList.toggle('hide');
+			buttoncard.classList.toggle('hidetogglecard');
+            buttonlist.classList.toggle('hidetogglelist');
+            boddy.classList.toggle('body-page');
+	});
+
+
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    var animating = false;
+    var cardsCounter = 0;
+    var numOfCards = 6;
+    var decisionVal = 80;
+    var pullDeltaX = 0;
+    var deg = 0;
+    var $card, $cardReject, $cardLike;
+  
+    function pullChange() {
+      animating = true;
+      deg = pullDeltaX / 10;
+      $card.css("transform", "translateX("+ pullDeltaX +"px) rotate("+ deg +"deg)");
+  
+      var opacity = pullDeltaX / 100;
+      var rejectOpacity = (opacity >= 0) ? 0 : Math.abs(opacity);
+      var likeOpacity = (opacity <= 0) ? 0 : opacity;
+      $cardReject.css("opacity", rejectOpacity);
+      $cardLike.css("opacity", likeOpacity);
+    };
+  
+    function release() {
+  
+      if (pullDeltaX >= decisionVal) {
+        $card.addClass("to-right");
+      } else if (pullDeltaX <= -decisionVal) {
+        $card.addClass("to-left");
+      }
+  
+      if (Math.abs(pullDeltaX) >= decisionVal) {
+        $card.addClass("inactive");
+  
+        setTimeout(function() {
+          $card.addClass("below").removeClass("inactive to-left to-right");
+          cardsCounter++;
+          if (cardsCounter === numOfCards) {
+            cardsCounter = 0;
+            $(".demo__card").removeClass("below");
+          }
+        }, 300);
+      }
+  
+      if (Math.abs(pullDeltaX) < decisionVal) {
+        $card.addClass("reset");
+      }
+  
+      setTimeout(function() {
+        $card.attr("style", "").removeClass("reset")
+          .find(".demo__card__choice").attr("style", "");
+  
+        pullDeltaX = 0;
+        animating = false;
+      }, 300);
+    };
+  
+    $(document).on("mousedown touchstart", ".demo__card:not(.inactive)", function(e) {
+      if (animating) return;
+  
+      $card = $(this);
+      $cardReject = $(".demo__card__choice.m--reject", $card);
+      $cardLike = $(".demo__card__choice.m--like", $card);
+      var startX =  e.pageX || e.originalEvent.touches[0].pageX;
+  
+      $(document).on("mousemove touchmove", function(e) {
+        var x = e.pageX || e.originalEvent.touches[0].pageX;
+        pullDeltaX = (x - startX);
+        if (!pullDeltaX) return;
+        pullChange();
+      });
+  
+      $(document).on("mouseup touchend", function() {
+        $(document).off("mousemove touchmove mouseup touchend");
+        if (!pullDeltaX) return; // prevents from rapid click events
+        release();
+      });
+    });
+  
+  });</script>

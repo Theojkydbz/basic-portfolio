@@ -18,6 +18,7 @@ export default{
 
 </script>
 <style lang="scss">
+*{transition: all 0.2s cubic-bezier(.65,0,.62,1.39);}
 @font-face {
   font-family: "Manrope Medium";
   src: url("/assets/fonts/manrope-medium.woff2") format("woff2");

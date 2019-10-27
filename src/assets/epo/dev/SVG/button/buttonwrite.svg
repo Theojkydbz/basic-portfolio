@@ -1,0 +1,44 @@
+
+<svg width="74px" height="71px" viewBox="0 0 74 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter x="-29.6%" y="-30.2%" width="159.3%" height="160.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="54" height="53" rx="26.5"></rect>
+        <filter x="-2.8%" y="-2.8%" width="105.6%" height="105.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.099104021 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-SE-Copy" transform="translate(-301.000000, -574.000000)">
+            <g id="Group-2" transform="translate(309.000000, 568.000000)">
+                <path d="M29.4339094,16.2393757 C54.3406287,17.3420652 66.7939884,12.770235 66.7939884,2.52388494 C66.7939884,-7.72246511 97.4765875,13.2294244 158.841786,65.3795535 C97.4765875,83.6194184 66.7939884,89.1429062 66.7939884,81.9500171 C66.7939884,71.1606835 60.8409679,68.7114585 30.4530818,68.7114585 C10.194491,68.7114585 9.85476687,51.2207642 29.4339094,16.2393757 Z" id="Path-2" fill="#0652DD"></path>
+                <g id="button/rect/write" transform="translate(0.000000, 16.000000)">
+                    <g id="button/rect/nope-copy" stroke-width="1" fill-rule="evenodd">
+                        <g id="Group" filter="url(#filter-1)">
+                            <g id="Rectangle">
+                                <use fill="#0652DD" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <path d="M27.4674267,17 L18,17 L18,35 L36,35 L36,22.9527081 L39,19.9527081 L39,35 C39,36.6568542 37.6568542,38 36,38 L18,38 C16.3431458,38 15,36.6568542 15,35 L15,17 C15,15.3431458 16.3431458,14 18,14 L30.4674267,14 L27.4674267,17 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="evenodd"></path>
+                    <path d="M35.1317876,14.093679 L37.906321,16.8682124 C38.2968453,17.2587367 38.2968453,17.8919017 37.906321,18.282426 L29.188747,27 L25,22.811253 L33.717574,14.093679 C34.1080983,13.7031547 34.7412633,13.7031547 35.1317876,14.093679 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="evenodd"></path>
+                    <polygon id="Path-2" fill="#FFFFFF" fill-rule="evenodd" points="23.9573605 24 23 29 28 28.0566425"></polygon>
+                    <text id="+" font-family="Avenir-Black, Avenir" font-size="11" font-weight="700" letter-spacing="-0.007193985" fill="#FFFFFF">
+                        <tspan x="28" y="34">+</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -16,7 +16,7 @@
             <div class="line">
             <ul>
               <li>
-                <a href="/"></a>
+                <a href="/">Home</a>
               </li>
             </ul>
             </div>
@@ -88,8 +88,6 @@ export default {
 .line *{
   margin: 0 0 0 0;
   padding: 5px;
-  
-  
 }
 h1{
 
@@ -194,18 +192,25 @@ h1{
       margin:0;
       padding: 0;
       margin-top: 2vh;
-      margin-left: 4vh;
+      margin-left: 0vh;
 
-      :link{
+      a{
+        padding:0;
+        padding-bottom:3px;
+        box-shadow: inset 0px -3px 0 #2E3642;
+        transition: all 0.9s cubic-bezier(0,0,0,1.39);
+      }
+      a:link{
 
-        text-decoration:none;
+          text-decoration:none;
 
       }
 
-      :hover{
-        color: #414141;
+      a:hover{
+          transition: all 0.2s cubic-bezier(.65,0,.62,1.39);
+          box-shadow: inset 0px -16px 0 rgba(24, 57, 113, 0.349);
       }
-
+      
       *{
         font-family: 'Work Sans', sans-serif;
         font-size: 17pt;

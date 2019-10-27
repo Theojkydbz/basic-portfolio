@@ -1,7 +1,7 @@
 <template>
   <div class="blog">
+    <router-link to="/" tag="a" class="back"><img class="back" href='/' src="@/assets/Home/back.svg"></img></router-link>
     <router-view />
-    <router-link to="/" tag="a" class="back">Home</router-link>
     <div class="footer"></div>
   </div>
 </template>
@@ -47,7 +47,11 @@ export default {
   padding:50px;
 }
 .back{
-  margin: 0 40px;
+  position: fixed;
+  width:50px;
+  left: 15px;
+  top: -15px;
+  z-index:99;
 }
 /deep/ {
   section{
@@ -55,6 +59,7 @@ export default {
     margin-bottom: 90px;
 
   }
+  
     img {
       width:100%;
       border-radius:10px;
@@ -64,11 +69,26 @@ export default {
         
     p{
       font-weight: 400;
-      font-size: 15px;
+      font-size: 18px;
       color: #2E3642;
       letter-spacing: 0;
-      line-height: 20px;
+      line-height: 30px;
       margin-bottom: 20px;
+    }
+    iframe{
+      margin-left:-40px;
+    }
+    @media only screen and (min-width : 730px){
+      .back{
+        display:none;
+      }
+      p{
+      font-size: 18px;
+      line-height:28px;
+      }
+      iframe{
+        margin-left:0px;
+      }
     }
     h1{
       margin: 0px;
@@ -181,7 +201,15 @@ section{
   padding: 0 40px;
 }
 @media only screen and (min-width : 730px){
-  section{padding-right:11vh}
+  section{
+    padding-right:11vh
+  }
+}
+@media only screen and (min-width : 1200px){
+  section{
+    padding-left:10vh;
+    padding-right:30vh;
+    }
 }
 
 

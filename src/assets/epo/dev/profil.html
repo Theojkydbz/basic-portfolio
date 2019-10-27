@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>APP_EPO_profil</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="bg">
+        <ul class="toggle">
+            <li class="back">
+                <a href="./index.html">
+                    <img src="./SVG/backarrow.svg" alt="">
+                </a>
+            </li>
+            <li class="more">
+                <a href="#more">
+                    <img src="./SVG/more.svg" alt="">
+                </a>
+            </li>
+        </ul>
+        
+        <ul class="profil">
+            <li class="profiltop">
+                <img src="./SVG/profil/content.svg" alt="">
+            </li>
+        </ul>
+        <ul class="profilscore">
+            <li class="con">
+                <img src="./SVG/profil/con.svg" alt="">
+            </li>
+            <li class="pro">
+                <img src="./SVG/profil/pro.svg" alt="">
+            </li>
+            <li class="publi">
+                <img src="./SVG/profil/publi.svg" alt="">
+            </li>
+        </ul>
+        <ul id="menu">
+                <img src="./SVG/profil/nav.svg" alt="">
+                <li>
+                    <a href="#Récents" class="tab-item current">
+                        Récents
+                    </a>
+                </li>
+                <li>
+                    <a href="#Articles" class="tab-item1">
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#Bookmarks" class="tab-item2">
+                        Bookmarks
+                    </a> 
+                </li>
+                
+        </ul>
+        <section class="sec recent">
+            <img  src="./SVG/profil/recent/good.svg" alt="">
+        </section>
+        <section class="sec article">
+
+            <p class="minialert"> Post ton premier article !</p>
+            <a href="#post">
+                <img class="postalert" src="./SVG/profil/article/post.svg" alt="">
+            </a>
+
+        </section>
+        <section class="sec bookmark">
+            <a href="./content.html">
+                <img class="bookmarkpost" src="./SVG/profil/bookmark/liste.png" alt="">
+            </a>
+        </section>
+    
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#menu a').click(function(){
+                $('#menu a').removeClass('current'); 
+                $(this).addClass('current'); 
+            });
+        });
+    </script>
+    <script>
+        var secs = document.querySelectorAll(".sec");
+        var sec1 = document.querySelector(".recent");
+        var tab1 = document.querySelector(".tab-item");
+        var sec2 = document.querySelector(".article");
+        var tab2 = document.querySelector(".tab-item1");
+        var sec3 = document.querySelector(".bookmark");
+        var tab3 = document.querySelector(".tab-item2");
+
+        function hideAll() {
+            for (var i = 0; i < secs.length; i++) {
+                secs[i].classList.add("hide");
+	        }
+        }
+        hideAll();
+        sec1.classList.remove("hide");
+        
+
+        tab1.addEventListener("click", function() {
+            hideAll();
+            sec1.classList.remove("hide");
+        });
+        tab2.addEventListener("click", function() {
+            hideAll();
+            sec2.classList.remove("hide");
+        });
+        tab3.addEventListener("click", function() {
+            hideAll();
+            sec3.classList.remove("hide");
+        });
+
+    </script>
+
+  
+</body>
