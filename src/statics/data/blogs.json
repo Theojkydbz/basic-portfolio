@@ -11,53 +11,35 @@
       "id": "epo",
       "date": "March 18, 2019",
       "title": "epo",
-      "description": "debates and social networks",
+      "description": "Debates and social networks",
       "img": "/img/cover.c958dd93.png"
-    },
-    {
-      "id": "smartimer-of-galaxy",
-      "date": "March 18, 2019",
-      "title": "Smartimer of Galaxy",
-      "description": "Worklow and project manager together in a timer"
-    },
-    {
-      "id": "smartimer-of-galaxy",
-      "date": "March 18, 2019",
-      "title": "Smartimer of Galaxy",
-      "description": "Worklow and project manager together in a timer"
-    },
-    {
-      "id": "smartimer-of-galaxy",
-      "date": "March 18, 2019",
-      "title": "Smartimer of Galaxy",
-      "description": "Worklow and project manager together in a timer"
     }
   ],
   "Experiments": 
   [
     {
-      "id": "smartimer-of-galaxy",
+      "id": "creative-codding",
       "date": "March 18, 2019",
-      "title": "Smartimer of Galaxy",
-      "description": "Worklow and project manager together in a timer"
+      "title": "Creative Codding",
+      "description": "Some experimentation with codding tools",
+      "img": "/img/cover.eb78f4d8.png"
     },
     {
-      "id": "smartimer-of-galaxy",
+      "id": "unique",
       "date": "March 18, 2019",
-      "title": "lolilo",
-      "description": "Worklow and project manager together in a timer"
-    },
+      "title": "Unique",
+      "description": "Algorithmic generator of wallpaper",
+      "img": "/img/cover.07054afb.png"
+    }
+  ],
+  "Weekly product challenge": 
+  [
     {
-      "id": "smartimer-of-galaxy",
+      "id": "creative-codding",
       "date": "March 18, 2019",
-      "title": "Smartimer of Galaxy",
-      "description": "Worklow and project manager together in a timer"
-    },
-    {
-      "id": "smartimer-of-galaxy",
-      "date": "March 18, 2019",
-      "title": "Smartimer of Galaxy",
-      "description": "Worklow and project manager together in a timer"
+      "title": "Creative Codding",
+      "description": "Some experimentation with codding tools",
+      "img": "http://www.open-for-young-women.org/wp-content/uploads/2019/05/blue.jpg"
     }
   ]
 }

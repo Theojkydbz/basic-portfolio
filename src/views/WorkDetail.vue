@@ -75,9 +75,17 @@ export default {
       line-height: 30px;
       margin-bottom: 20px;
     }
-    iframe{
+    .center{
+      margin-left:22vw;
+    }
+    iframe.proto{
       display:none;
     }
+    iframe{
+        border-radius:10px;
+        margin-top:40px;
+        margin-bottom:40px;
+      }
     @media only screen and (min-width : 730px){
       .back{
         display:none;
@@ -89,9 +97,16 @@ export default {
       font-size: 18px;
       line-height:28px;
       }
-      iframe{
+      
+      iframe.proto{
         display:block;
-        margin-left:0px;
+        margin:0px auto;
+        margin-top:40px;
+        margin-bottom: 40px;
+        border-width:10px;
+        border-color:#2E3642;
+        border-style:solid;
+        border-radius:20px;
       }
     }
     h1{

@@ -29,38 +29,75 @@
 ![flowchart of our process](../../assets/epo/overviewprocess.png)
 
 ## Software Prototype
-<iframe width="320"
-        height="568"
-        src="https://theojkydbz.github.io/ProjetLong/"></iframe>
-        
+<iframe class="proto"
+        width="340"
+        height="588"
+        src="https://theojkydbz.github.io/ProjetLong/#list"></iframe>
+
 <a class='mobileview' target="_blank" href="https://theojkydbz.github.io/ProjetLong/">Mobile Prototype (optimized for Iphone SE)</a>
 
 
+## Context
+
+![stats for context](../../assets/epo/stats.png)
+> 99.2% of individuals have an information medium
+[cairn.info](https://www.cairn.info/revue-reseaux-2010-2-page-225.htm#)
+
+Why are we interested in the information:
+![brainstorm for context](../../assets/epo/brainstorm.png)
+
+Social media has a responsibility to reflect reality.
 ## Concept
+Today we have a lot of fake news and all information is given with intent. People are influenced by social media and don't develop their view point to reach their verity
 
-> "With the timer, everyone stays on track and we produce a ton of ideas" - Tina Chen, Product Designer at Medium
+> How to detach the bias of a journalistic article to allow the user to form his opinion ?
 
-I have confronted by my internship to the world of work. despite my very good position at [Emotic](https://emotic.fr/) 
-the contrast between school project and internship project inspire me to work on project management. 
+![Persona for our EPO project](../../assets/epo/persona1.png)
+![Persona for our EPO project](../../assets/epo/persona2.png)
 
-![Persona for our Smartimer project](../../assets/smartimer/persona.png)
+> By the use of time, how to allow the user to inform himself and confront his ideas ?
 
 
-targets primarily the professional world and more particularly employees of companies where schedule means meeting,
-rapid prototyping, creative workshop, ticket resolution, development, sprint or workshop. Companies, project managers, 
-freelancer and lead managers will find it of enormous interest, they will be able to get to know better the working habits of 
-their employees, for a more appropriate framework. They will also be able to carry out their project and have a real vision of 
-their employees' time.
+### Description
+A service whose function is to gather journalistic articles so that each user can interpret them 
+and make his opinion, as well as give his opinion.
+An app with a time feature to decrease infobesity.
+### Expectations
+Users want to share their opinion and have a confrontation in divergent opinions.
+Being informed in a reliable and regular way is the priority in the application.
+While being able to verify the information.
 
-## ideate
+## Ideate 
 
-![Hero render for our Smartimer project](../../assets/smartimer/features.png)
+### Goals
+![Goals for our EPO project](../../assets/epo/goals.png)
 
-A task is completed before the scheduled time ? Smartimer of Galaxy adapts to our user with simple interactions
 
-![Hero render for our Smartimer project](../../assets/smartimer/gestures.png)
-Smartimer of Galaxy is a very visual object allowing to materialize the time that passes, by indicating the time remaining to an activity. 
-it also provides an opportunity to learn how to manage it while implementing self-regulation. It brings urgency and efficiency to the task of our user : For meeting, rapid prototyping, creative workshop, simple tasks, workshop. Using the principle of the timer, the Smartimer of Galaxy removes its authoritarian character thanks to approximate data and by removing precise measurement. Smartimer of Galaxy is connected to our calendar and all our events and as soon as it is on, our events and tasks are materialized in time and have an expiration.
-A task is completed before the scheduled time ? Smartimer of Galaxy adapts to our user with simple interactions: just flip it on the right side to move on to the next event in your calendar ! Go back to your previous task by just flipping it to the left ! Want a break ? Put the screen on the table to put the timer on hold ! At the end of your day you will get a glimpse of your real schedule and will improve the way you plan your schedule.
+### Low fidelity
+![low fidelity proto for our EPO project](../../assets/epo/lowfidelity.png)
+![low fidelity tests for our EPO project](../../assets/epo/lowtest.png)
 
-![Hero render for our Smartimer project](../../assets/smartimer/technical.png)
+
+## Oriented Object User Experience
+![Hero render for our Smartimer project](../../assets/epo/oouxchart.png)
+![Hero render for our Smartimer project](../../assets/epo/oouxai.png)
+
+## Identity
+![Hero render for our Smartimer project](../../assets/epo/logo.png)
+- E = elefthería (grec) = freedom (en)
+- P = pliroforíes (grec) = information (en)
+- O = óra (grc) = time (en) 
+![Hero render for our Smartimer project](../../assets/epo/id.png)
+
+## Iterate
+### User tests
+We decided to test during the morning our high fidelity prototype on people on the bus.
+![Hero render for our Smartimer project](../../assets/epo/usertests.png)
+
+## Prototype
+### technical stack
+![Hero render for our Smartimer project](../../assets/epo/stack.png)
+
+![Hero render for our Smartimer project](../../assets/epo/dev.png)
+
+![Hero render for our Smartimer project](../../assets/epo/thanks.png)

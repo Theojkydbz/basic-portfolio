@@ -16,7 +16,9 @@
             <div class="line">
             <ul>
               <li>
-                <a href="/">Home</a>
+                <router-link to="/">
+                  Home
+                </router-link>
               </li>
             </ul>
             </div>
