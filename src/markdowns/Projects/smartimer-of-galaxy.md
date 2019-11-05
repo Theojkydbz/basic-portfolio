@@ -34,7 +34,7 @@ I was involved with a friend in Samsung Mobile Design Competition. For this entr
 
 > "With the timer, everyone stays on track and we produce a ton of ideas"     -      Tina Chen, Product Designer at Medium
 
-I have confronted by my internship to the world of work. despite my very good position at [Emotic](https://emotic.fr/) 
+I have confronted by my internship to the world of work. despite my position at [Emotic](https://emotic.fr/) 
 the contrast between school project and internship project inspire me to work on project management. 
 
 ![Persona for our Smartimer project](../../assets/smartimer/persona.png)

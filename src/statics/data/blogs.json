@@ -1,18 +1,29 @@
 {
-  "Projects": [
+  "Projects":
+  [
     {
       "id": "smartimer-of-galaxy",
       "date": "March 18, 2019",
       "title": "Smartimer of Galaxy",
       "description": "Worklow and project manager together in a timer",
-      "img": "/img/cover.c2b53dde.png"
+      "img": "/img/cover.c2b53dde.png",
+      "metier": "Product design"
     },
     {
       "id": "epo",
       "date": "March 18, 2019",
       "title": "epo",
       "description": "Debates and social networks",
-      "img": "/img/cover.c958dd93.png"
+      "img": "/img/cover.c958dd93.png",
+      "metier": "Product design"
+    },
+    {
+      "id": "dual",
+      "date": "March 18, 2019",
+      "title": "Dual",
+      "description": "Manage our city",
+      "img": "/img/cover.b375f059.png",
+      "metier": "Interaction design"
     }
   ],
   "Experiments": 
@@ -22,24 +33,27 @@
       "date": "March 18, 2019",
       "title": "Creative Codding",
       "description": "Some experimentation with codding tools",
-      "img": "/img/cover.eb78f4d8.png"
+      "img": "/img/cover.eb78f4d8.png",
+      "metier": "Codding"
     },
     {
       "id": "unique",
       "date": "March 18, 2019",
       "title": "Unique",
       "description": "Algorithmic generator of wallpaper",
-      "img": "/img/cover.07054afb.png"
+      "img": "/img/cover.07054afb.png",
+      "metier": "Codding"
     }
   ],
   "Weekly product challenge": 
   [
     {
-      "id": "creative-codding",
+      "id": "01",
       "date": "March 18, 2019",
-      "title": "Creative Codding",
-      "description": "Some experimentation with codding tools",
-      "img": "http://www.open-for-young-women.org/wp-content/uploads/2019/05/blue.jpg"
+      "title": "01",
+      "description": "Challenge",
+      "img": "/img/cover.987b063b.png",
+      "metier": "Product design"
     }
   ]
 }

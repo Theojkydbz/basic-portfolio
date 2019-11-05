@@ -46,13 +46,7 @@ export default {
 .footer{
   padding:50px;
 }
-.back{
-  position: fixed;
-  width:50px;
-  left: 15px;
-  top: -15px;
-  z-index:99;
-}
+
 /deep/ {
   section{
     margin-top: 70px;
@@ -60,12 +54,6 @@ export default {
 
   }
   
-    img {
-      width:100%;
-      border-radius:10px;
-      margin-top:30px;
-      margin-bottom:30px
-    }
         
     p{
       font-weight: 400;
@@ -74,6 +62,9 @@ export default {
       letter-spacing: 0;
       line-height: 30px;
       margin-bottom: 20px;
+      margin-left:30px;
+      margin-right:30px;
+      
     }
     .center{
       margin-left:22vw;
@@ -85,6 +76,18 @@ export default {
         border-radius:10px;
         margin-top:40px;
         margin-bottom:40px;
+      }
+    
+      img {
+      width:120%;
+      border-radius:10px;
+      margin-top:30px;
+      margin-bottom:30px;
+      margin-left:-30px;
+      margin-right:-30px;
+      }
+      .phantom{
+        display:none;
       }
     @media only screen and (min-width : 730px){
       .back{
@@ -118,6 +121,8 @@ export default {
 
       margin-top: 20px; 
       margin-bottom: 20px; 
+      margin-left:40px;
+      margin-right:40px;
     }
 
     h2{
@@ -128,6 +133,8 @@ export default {
 
       margin-top: 50px; 
       margin-bottom: 20px; 
+      margin-left:40px;
+      margin-right:40px;
     }
     h3{
       margin: 0px;
@@ -138,20 +145,29 @@ export default {
 
       margin-top: 50px; 
       margin-bottom: 20px; 
+      margin-left:40px;
+      margin-right:40px;
     }
 
     ul{
       display:inline;
+      
       li {
         margin: 0;
         list-style-type: none;
+        margin-left:30px;
+        margin-right:30px;
         p{
           margin: 0;
+          margin-left:30px;
+          margin-right:30px;
         }
         h3{
           margin: 0;
           margin-top: 20px;
           margin-bottom: 5px;
+          margin-left:40px;
+          margin-right:40px;
         }
       }
     }
@@ -174,6 +190,8 @@ export default {
       margin-bottom:50px;
       padding: 1em;
       border-left: 5px solid #999;
+      margin-left: 30px;
+      margin-right: 30px;
     }
     blockquote:before {
       display: none;
@@ -212,6 +230,14 @@ export default {
     hr:after {
       border-radius: 0 30px 30px 0;
       right: -2px;
+    }
+    .back{
+      position: fixed;
+      width:50px;
+      left: 15px;
+      top: -15px;
+      z-index:99;
+      margin-left:0;
     }
 
   }

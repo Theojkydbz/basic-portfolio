@@ -1,5 +1,6 @@
 ![Welcome page of our EPO project](../../assets/creativecodding/cover2.png)
 # Creative codding
+<img class="phantom" src="../../assets/creativecodding/cover.png"></img>
 
 ## 42 school
 During summer 2018, I went to 42 school for learning basics imperative programmation with C language.
@@ -24,7 +25,7 @@ report and evaluate, while meeting other 42 students.
 - Pedagogy in code (I helped and explain some principles to my classmates)
 
 ![Welcome page of our EPO project](../../assets/creativecodding/patatap.gif)
-blablabla Try it > [Patatap](https://ateliernum.github.io/projet_patatap_1819/Geiller_Th2o/index.html)
+Try it > [Patatap](https://ateliernum.github.io/projet_patatap_1819/Geiller_Th2o/index.html)
 
 ## VOID
 

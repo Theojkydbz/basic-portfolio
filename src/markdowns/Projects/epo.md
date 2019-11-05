@@ -29,6 +29,7 @@
 ![flowchart of our process](../../assets/epo/overviewprocess.png)
 
 ## Software Prototype
+It is our latest prototype that demonstrates our use cases!
 <iframe class="proto"
         width="340"
         height="588"
@@ -45,10 +46,10 @@
 
 Why are we interested in the information:
 ![brainstorm for context](../../assets/epo/brainstorm.png)
-
 Social media has a responsibility to reflect reality.
+
 ## Concept
-Today we have a lot of fake news and all information is given with intent. People are influenced by social media and don't develop their view point to reach their verity
+Today all information is given with intent. People want develop their view point to reach their verity
 
 > How to detach the bias of a journalistic article to allow the user to form his opinion ?
 
@@ -74,30 +75,44 @@ While being able to verify the information.
 
 
 ### Low fidelity
+We have reach a use case with a kind of playlist builder to time experience of user
 ![low fidelity proto for our EPO project](../../assets/epo/lowfidelity.png)
+### Iterate
+Also, tried to improve our pencil paper models as much as possible before moving on to the high fidelity prototyping
 ![low fidelity tests for our EPO project](../../assets/epo/lowtest.png)
 
 
 ## Oriented Object User Experience
+In order to build a better information architecture, I mapped the entire application architecture to understand
+where and in what form the interface components are used
 ![Hero render for our Smartimer project](../../assets/epo/oouxchart.png)
+The main component is the article, so I prioritize information that has a better impact on our users.
 ![Hero render for our Smartimer project](../../assets/epo/oouxai.png)
 
-## Identity
+## Logo Design
 ![Hero render for our Smartimer project](../../assets/epo/logo.png)
 - E = elefthería (grec) = freedom (en)
 - P = pliroforíes (grec) = information (en)
 - O = óra (grc) = time (en) 
 ![Hero render for our Smartimer project](../../assets/epo/id.png)
 
+## Prototype
+
+### High fidelity
+![Hero render for our Smartimer project](../../assets/epo/screen.png)
+Timer send you alert signal for stop our reading.
+
+### Technical stack
+![Hero render for our Smartimer project](../../assets/epo/stack.png)
+
+![Hero render for our Smartimer project](../../assets/epo/dev.png)
+
+
 ## Iterate
 ### User tests
 We decided to test during the morning our high fidelity prototype on people on the bus.
 ![Hero render for our Smartimer project](../../assets/epo/usertests.png)
 
-## Prototype
-### technical stack
-![Hero render for our Smartimer project](../../assets/epo/stack.png)
-
-![Hero render for our Smartimer project](../../assets/epo/dev.png)
-
+## Conclusion
+We have tackled a very difficult problem and I think social networks are a very complex field. so I think I need to explore and better understand this field because connecting people across distance and other constraints is really exciting.
 ![Hero render for our Smartimer project](../../assets/epo/thanks.png)

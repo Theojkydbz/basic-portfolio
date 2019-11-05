@@ -16,7 +16,7 @@
                             <div class="card-top">
                                 <div class="img" :style="{'background-image':`linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(${entry.img})`}"> </div>
                                 <div class="text">
-                                    <p class="metier">Product design</p>
+                                    <p class="metier">{{entry.metier}}</p>
                                     <h2 class="name">{{entry.title}}</h2>
                                     <p class='shorttext'>{{entry.description}}</p>
                                 </div>
@@ -30,15 +30,12 @@
 </template>
 
 <script>
-
 import BLOGENTRIES from '@/statics/data/blogs.json'
 // @ is an alias to /src
 import Vue from 'vue'
 import store from '../store.js'
-
 // import { fetchActivities, fetchCategories, fetchUser, deleteActivityAPI } from '@/api'
 import { debug } from 'util';
-
 export default {
   name: 'App',
   computed: {
@@ -81,6 +78,26 @@ export default {
         margin-right: 10%;
     img{
         width: 80vw;
+        @-webkit-keyframes AnimationName {
+            0%{background-position:0% 76%}
+            50%{background-position:100% 25%}
+            100%{background-position:0% 76%}
+        }
+        @-moz-keyframes AnimationName {
+            0%{background-position:0% 76%}
+            50%{background-position:100% 25%}
+            100%{background-position:0% 76%}
+        }
+        @-o-keyframes AnimationName {
+            0%{background-position:0% 76%}
+            50%{background-position:100% 25%}
+            100%{background-position:0% 76%}
+        }
+        @keyframes AnimationName {
+            0%{background-position:0% 76%}
+            50%{background-position:100% 25%}
+            100%{background-position:0% 76%}
+        }
     }
     .wrapper-text{
 
