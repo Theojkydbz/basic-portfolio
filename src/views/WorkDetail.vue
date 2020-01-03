@@ -57,17 +57,14 @@ export default {
         
     p{
       font-weight: 400;
-      font-size: 18px;
+      font-size: 16px;
       color: #2E3642;
       letter-spacing: 0;
       line-height: 30px;
       margin-bottom: 20px;
-      margin-left:30px;
-      margin-right:30px;
       
     }
     .center{
-      margin-left:22vw;
     }
     iframe.proto{
       display:none;
@@ -79,12 +76,10 @@ export default {
       }
     
       img {
-      width:120%;
+      width:100%;
       border-radius:10px;
       margin-top:30px;
       margin-bottom:30px;
-      margin-left:-30px;
-      margin-right:-30px;
       }
       .phantom{
         display:none;
@@ -97,7 +92,7 @@ export default {
         display:none;
       }
       p{
-      font-size: 18px;
+      font-size: 16px;
       line-height:28px;
       }
       
@@ -121,7 +116,6 @@ export default {
 
       margin-top: 20px; 
       margin-bottom: 20px; 
-      margin-left:40px;
       margin-right:40px;
     }
 
@@ -133,7 +127,6 @@ export default {
 
       margin-top: 50px; 
       margin-bottom: 20px; 
-      margin-left:40px;
       margin-right:40px;
     }
     h3{
@@ -145,28 +138,26 @@ export default {
 
       margin-top: 50px; 
       margin-bottom: 20px; 
-      margin-left:40px;
       margin-right:40px;
     }
 
     ul{
-      display:inline;
-      
+      display:block;
+      margin-top:40px;
+      margin-bottom:40px;
       li {
         margin: 0;
         list-style-type: none;
-        margin-left:30px;
-        margin-right:30px;
+        
         p{
           margin: 0;
-          margin-left:30px;
           margin-right:30px;
         }
         h3{
           margin: 0;
           margin-top: 20px;
           margin-bottom: 5px;
-          margin-left:40px;
+
           margin-right:40px;
         }
       }
@@ -190,7 +181,6 @@ export default {
       margin-bottom:50px;
       padding: 1em;
       border-left: 5px solid #999;
-      margin-left: 30px;
       margin-right: 30px;
     }
     blockquote:before {

@@ -6,7 +6,8 @@
                     <img class="illustration" src="@/assets/Home/Illustration.svg" alt="">
                     <div class="wrapper-text">
                         <h1>Théo Geiller</h1>
-                        <p>Product Designer Student who bla bla bla blabla et blabla blablabla Design</p>
+                        <p>hi i'm product design student oriented on interaction, user experience and development. - PORTFOLIO IN PROGRESS</p>
+                        
                     </div>
                 </section>
                 <div v-for="(section, index) in Object.keys(entries)" :key="index">
@@ -76,6 +77,7 @@ export default {
         margin-top: 15%;
         margin-left: 10%;
         margin-right: 10%;
+        
     img{
         width: 80vw;
         @-webkit-keyframes AnimationName {

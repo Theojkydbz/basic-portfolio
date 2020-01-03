@@ -1,6 +1,14 @@
 {
-  "Projects":
+  "projects":
   [
+    {
+      "id": "emobot",
+      "date": "March 18, 2019",
+      "title": "Emorkshop",
+      "description": "Build conversationnal agent for create better workshop",
+      "img": "/img/cover.70228850.png",
+      "metier": "Product design"
+    },
     {
       "id": "smartimer-of-galaxy",
       "date": "March 18, 2019",
@@ -12,22 +20,22 @@
     {
       "id": "epo",
       "date": "March 18, 2019",
-      "title": "epo",
+      "title": "Epo",
       "description": "Debates and social networks",
       "img": "/img/cover.c958dd93.png",
       "metier": "Product design"
-    },
-    {
-      "id": "dual",
-      "date": "March 18, 2019",
-      "title": "Dual",
-      "description": "Manage our city",
-      "img": "/img/cover.b375f059.png",
-      "metier": "Interaction design"
     }
   ],
-  "Experiments": 
+  "experiments": 
   [
+    {
+      "id": "comete",
+      "date": "March 18, 2019",
+      "title": "Comète",
+      "description": "SNCF project",
+      "img": "/img/cover.afec76c4.png",
+      "metier": "Agility"
+    },
     {
       "id": "creative-codding",
       "date": "March 18, 2019",
@@ -43,17 +51,6 @@
       "description": "Algorithmic generator of wallpaper",
       "img": "/img/cover.07054afb.png",
       "metier": "Codding"
-    }
-  ],
-  "Weekly product challenge": 
-  [
-    {
-      "id": "01",
-      "date": "March 18, 2019",
-      "title": "01",
-      "description": "Challenge",
-      "img": "/img/cover.987b063b.png",
-      "metier": "Product design"
     }
   ]
 }

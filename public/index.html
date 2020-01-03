@@ -9,16 +9,6 @@
     <meta name="description" lang='en' content="Théo GEILLER, student in digital product design, passionate about experience design, user-centric interaction and creative code." />
   </head>
   <body>
-      <script>
-          function initFreshChat() {
-            window.fcWidget.init({
-              token: "7b8f70cc-8e70-4531-b09f-5e8f95b17573",
-              host: "https://wchat.freshchat.com"
-            });
-          }
-          function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
-        </script>
-        
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133540735-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -29,6 +19,17 @@
             gtag('js', new Date());
 
             gtag('config', 'UA-133540735-1');
+        </script>
+        <!-- Hotjar Tracking Code for http://www.theogeiller.com/ -->
+        <script>
+          (function(h,o,t,j,a,r){
+              h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+              h._hjSettings={hjid:1594892,hjsv:6};
+              a=o.getElementsByTagName('head')[0];
+              r=o.createElement('script');r.async=1;
+              r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+              a.appendChild(r);
+          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
         
     <noscript>

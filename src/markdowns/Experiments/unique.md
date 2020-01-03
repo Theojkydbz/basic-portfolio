@@ -24,12 +24,12 @@ It's nice to see a lot of difference between all the generated forms.
 <a class='center' target="_blank" href="https://theojkydbz.github.io/vue-unique/">Mobile Prototype</a>
 
 ## Some of my others training with vue.js
-I learn myself how build spa, pwa whith dynamic content. I have learn some backend basis with node.js.
+I learn myself how build spa, pwa with dynamic content. I have learn some backend basis with node.js.
 I am also able to manage npm project with command line interface. 
 I have learned a lot about all technical stack in production, and talk with a lot of developpers about their practice.
 Without losing sight of my designer goals and methodology.
 
-Exercice/training by [Filip Jerga](https://github.com/Jerga99) (ui in progress :O) :
+Exercice/training by [Filip Jerga](https://github.com/Jerga99) :
 
 <iframe class="proto"
         width="320"

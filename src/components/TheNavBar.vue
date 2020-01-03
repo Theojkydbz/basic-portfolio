@@ -6,25 +6,44 @@
           <h1>Théo Geiller</h1>
         </div>
         <div class="line">
-          <p class="role"> Product Designer</p>
+          <p class="role">Product Design</p>
         </div>
         <div class="line">
-          <p class="devise"> User Centered</p>
+              <a href="">Resume</a>
         </div>
-        <div class="line">
-          <div class="routernav" v-if="!Showrouter">
-            <div class="line">
-            <ul>
-              <li>
-                <router-link to="/">
-                  Home
+
+<div class="line">
+  <div class="liner">
+      <ul class="routernav" v-if="!Showrouter">
+          <li>
+                <router-link to='/' id="section">
+                    Home
                 </router-link>
-              </li>
-            </ul>
+          </li>
+      </ul>
+  </div>
+</div>
+<!-- <div class="liner">
+          <ul class="routernav" v-if="!Showrouter">
+            <div v-for="(section, index) in Object.keys(entries)" :key="index">
+                    <li>
+                      <router-link to='/' id="section">
+                        {{section}}
+                      </router-link>
+                    </li>
+                    <li>
+                        <div v-for="entry in entries[section]" :key="entry.id" @click="$router.push({name: entry.id})">
+                          <div class="line">
+                            <a href="">{{entry.title}}</a>
+                          </div>
+                        </div>
+                        </li>
+                    
             </div>
-          </div>
-        </div>
-         
+          
+        </ul>
+
+</div> -->
         
           <Social />
       </div>
@@ -34,16 +53,22 @@
 
 <script>
 import Social from '@/components/Social'
+import BLOGENTRIES from '@/statics/data/blogs.json'
 
 export default {
+   computed: {
+    entries() {
+      return BLOGENTRIES
+    }
+  },
   data(){
     return {
 
-      Showrouter: false,
-      Previous:'/work/',
-      Next:'/work/',
-      ableToPrev:true,
-      ableToNext:true,
+      Showrouter: true,
+      // Previous:'/work/',
+      // Next:'/work/',
+      // ableToPrev:true,
+      // ableToNext:true,
 
     }
   },
@@ -58,13 +83,13 @@ export default {
       }else{
         this.Showrouter = false;
       }
-      var id = parseInt(this.$route.params.id)
-      this.Next = '/work/' + (id + 1)
-      this.Previous = '/work/' + (id - 1)
+      // var id = parseInt(this.$route.params.id)
+      // this.Next = '/work/' + (id + 1)
+      // this.Previous = '/work/' + (id - 1)
 
-      if(id == '1546968934'){this.ableToPrev=false}else{this.ableToPrev=true}
-      if(id == '1546968939'){this.ableToNext=false}else{this.ableToNext=true}
-      console.log('next:'+this.Next+'previous:'+this.Previous)
+      // if(id == '1546968934'){this.ableToPrev=false}else{this.ableToPrev=true}
+      // if(id == '1546968939'){this.ableToNext=false}else{this.ableToNext=true}
+      // console.log('next:'+this.Next+'previous:'+this.Previous)
     }
   }
 
@@ -72,6 +97,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap');
 
 .head{
@@ -89,7 +115,6 @@ export default {
 }
 .line *{
   margin: 0 0 0 0;
-  padding: 5px;
 }
 h1{
 
@@ -148,12 +173,6 @@ h1{
     margin-right: 2vh;
   }
 
-  .line *{
-    margin: 0 0 0 0;
-    padding: 5px;
-    display: inline-block; 
-  }
-
   h1{
     font-size: 18pt;
     color: #2F3542;
@@ -181,12 +200,39 @@ h1{
     color: #A4B0BE;
    
   }
-  .line ul{
+  .liner ul{
+    margin-top:20vh
+  }
+  .line{
+    margin: 0 0 0 0;
+    padding: 5px;
+  }
+  .line a{
+    
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14pt;
+    color: #747D8C;
+    padding:0;
+    padding-bottom:4px;
+    box-shadow: inset 0px -3px 0 #626f82;
+    transition: all 0.9s cubic-bezier(0,0,0,1.39);
+  }
+  a:link{
+
+      text-decoration:none;
+
+  }
+
+  a:hover{
+      transition: all 0.2s cubic-bezier(.65,0,.62,1.39);
+      box-shadow: inset 0px -16px 0 rgba(24, 57, 113, 0.349);
+  }
+  
+  ul{
 
     display: block;
     margin:0;
-    padding: 0;
-    margin-top: 20vh;
+    padding:0;
 
     li{
 
@@ -215,7 +261,7 @@ h1{
       
       *{
         font-family: 'Work Sans', sans-serif;
-        font-size: 17pt;
+        font-size: 14pt;
         color: #747D8C;
 
       }
