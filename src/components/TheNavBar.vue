@@ -9,20 +9,20 @@
           <p class="role">Product Design</p>
         </div>
         <div class="line">
-              <a href="">Resume</a>
+              <a target="_blank" href="https://drive.google.com/file/d/1LTsx-hW_DO24EvaZz7G2Op_3y1749S2P/view?usp=sharing">Resume</a>
         </div>
 
-<div class="line">
-  <div class="liner">
-      <ul class="routernav" v-if="!Showrouter">
-          <li>
-                <router-link to='/' id="section">
-                    Home
-                </router-link>
-          </li>
-      </ul>
-  </div>
-</div>
+        <div class="line">
+          <div class="liner">
+              <ul class="routernav" v-if="!Showrouter">
+                  <li>
+                        <router-link to='/' id="section">
+                            Home
+                        </router-link>
+                  </li>
+              </ul>
+          </div>
+        </div>
 <!-- <div class="liner">
           <ul class="routernav" v-if="!Showrouter">
             <div v-for="(section, index) in Object.keys(entries)" :key="index">
@@ -45,7 +45,7 @@
 
 </div> -->
         
-          <Social />
+          <Social class="social" />
       </div>
     </div>
   </div>
@@ -100,6 +100,10 @@ export default {
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap');
 
+.social{
+  display: inline-block;
+}
+
 .head{
   margin-top: 10vh;
   margin-left: 8vh;
@@ -148,7 +152,6 @@ h1{
 
 
 
-
 @media only screen and (min-width : 450px){
 /* Styles pour cette Media Queries */
 
@@ -159,7 +162,9 @@ h1{
     /* background-color: rgb(255, 255, 255); */
     height:100vh;
     top: 0;
-    width: 30vw
+    width: 35vw;
+    background: #FFFFFF;
+    box-shadow: 11px 0 12px 0 rgba(0,0,0,0.05);
     
   }
   .head .wrap{
@@ -268,6 +273,25 @@ h1{
     }
   }
 }
+@media only screen and (min-width : 1120px){
+  .nav{
+    width: 30vw;
+    
+  }
+}
+@media only screen and (min-width : 1300px){
+  .nav{
+    width: 28vw;
+    
+  }
+}
+@media only screen and (min-width : 1400px){
+  .nav{
+    width: 22vw;
+    
+  }
+}
+
 
 
 </style>

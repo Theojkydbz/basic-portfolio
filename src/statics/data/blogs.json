@@ -24,6 +24,14 @@
       "description": "Debates and social networks",
       "img": "/img/cover.c958dd93.png",
       "metier": "Product design"
+    },
+    {
+      "id": "cumulus",
+      "date": "March 18, 2019",
+      "title": "Cumulus green 2020",
+      "description": "For a New Circular Economy",
+      "img": "/img/cover.988fe4df.png",
+      "metier": "Product design"
     }
   ],
   "experiments": 
@@ -37,12 +45,20 @@
       "metier": "Agility"
     },
     {
-      "id": "creative-codding",
+      "id": "dailyui",
       "date": "March 18, 2019",
-      "title": "Creative Codding",
+      "title": "Daily User Interface",
+      "description": "Building interfaces for 100 days (IN PROGRESS)",
+      "img": "/img/cover.149bc0bc.png",
+      "metier": "User Interface"
+    },
+    {
+      "id": "creative-coding",
+      "date": "March 18, 2019",
+      "title": "Creative Coding",
       "description": "Some experimentation with codding tools",
       "img": "/img/cover.eb78f4d8.png",
-      "metier": "Codding"
+      "metier": "Coding"
     },
     {
       "id": "unique",
@@ -50,7 +66,7 @@
       "title": "Unique",
       "description": "Algorithmic generator of wallpaper",
       "img": "/img/cover.07054afb.png",
-      "metier": "Codding"
+      "metier": "Coding"
     }
   ]
 }

@@ -3,12 +3,15 @@
         <div class="column is-9">
             <div v-if="!isFetching">
                 <section class="intro">
+                    
                     <img class="illustration" src="@/assets/Home/Illustration.svg" alt="">
                     <div class="wrapper-text">
                         <h1>Théo Geiller</h1>
-                        <p>hi i'm product design student oriented on interaction, user experience and development. - PORTFOLIO IN PROGRESS</p>
-                        
+                        <p>hi I'm product design student oriented on interaction, user experience and development. - PORTFOLIO IN PROGRESS</p>
                     </div>
+                    <a class="resume" target="_blank" href="https://drive.google.com/file/d/1LTsx-hW_DO24EvaZz7G2Op_3y1749S2P/view?usp=sharing">Resume</a>
+                    <Social class="social" />
+                    
                 </section>
                 <div v-for="(section, index) in Object.keys(entries)" :key="index">
                     <h1 id="section">{{section}}</h1>
@@ -37,12 +40,17 @@ import Vue from 'vue'
 import store from '../store.js'
 // import { fetchActivities, fetchCategories, fetchUser, deleteActivityAPI } from '@/api'
 import { debug } from 'util';
+
+import Social from '@/components/Social'
 export default {
   name: 'App',
   computed: {
     entries() {
       return BLOGENTRIES
     }
+  },
+  components:{
+    Social
   },
   created () {
     let scrollY = document.body.style.top
@@ -67,16 +75,20 @@ export default {
  html,body {
   font-family: 'Work Sans', serif;
   background: rgb(255, 255, 255);
+    overflow-x: hidden; //horizontal
+    overflow-y: scroll; //vertical
 }
+
+
 
 .intro{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-        margin-top: 15%;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
         
     img{
         width: 80vw;
@@ -101,6 +113,16 @@ export default {
             100%{background-position:0% 76%}
         }
     }
+    .illustration{
+        position:absolute;
+        top:30vh;
+        width:80%;
+        margin-left:0vw;
+        opacity:0.2;
+        overflow-x: hidden; //horizontal
+        overflow-y: scroll; //vertical
+        display:none;
+    }
     .wrapper-text{
 
         display: flex;
@@ -108,33 +130,53 @@ export default {
         align-items: center;
         justify-content: center;
 
-        margin-top: 70px;
+        margin-top: 10px;
 
         h1{
             width:300px; 
-            width: 80%;
+            width: 100%;
             margin:10px;
+            margin-bottom:30px;
             font-weight: 500;
             font-size: 2rem;
             color: #2E3643;
             letter-spacing: 0;
-            text-align: center;
+            text-align: left;
 
         }
         p{
-            text-align: center;  
-            width: 80%;
+            text-align: left;  
+            width: 100%;
             opacity: 0.7;
             line-height: 1.6;
-            margin:10px;
-            margin-top: 0;
             font-weight: 400;
             font-size: 1.3rem;
             color: #2E3643;
             letter-spacing: 0;
         }
-        
     }
+    a.resume{
+            
+            margin-right:260px;
+            margin-top:20px;
+            text-align: left;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 14pt;
+            color: #747D8C;
+            padding:0;
+            padding-bottom:4px;
+            box-shadow: inset 0px -3px 0 #626f82;
+            transition: all 0.9s cubic-bezier(0,0,0,1.39);
+        }
+        .social{
+            position: relative;
+            bottom:0;
+            left:-57px;
+            margin-top: 30px;
+            svg{
+                margin-right:5px;
+            }
+        }
     
 }
 
@@ -156,7 +198,7 @@ export default {
 }
 
 h1#section{
-  margin-top: 20vh;
+  margin-top: 15vh;
   margin-left: 10%;
   margin-bottom: 5%;
   text-align: left;
@@ -238,6 +280,13 @@ h1#section{
         
     }
     @media only screen and (min-width : 730px){
+        a.resume{
+            display:none;
+        }
+        .social{
+            display:none;
+        }
+        
 
     h1#section{
       margin-top: 20vh;
@@ -259,8 +308,13 @@ h1#section{
 
     }
     .intro{
+        margin-right:30px;
+        margin-left:70px;
         img{
         width: auto;
+        }
+        .illustration{
+            width:50%
         }
     }
 
@@ -324,7 +378,9 @@ h1#section{
     
 
 @media only screen and (min-width : 900px){
-
+    section.intro{
+        margin-right:40px;
+    }
 
             
     .card-wrapper{
@@ -407,6 +463,14 @@ h1#section{
             margin-top: 15%;
             margin-left: 10%;
             margin-right: 10%;
+        .illustration{
+            position:relative;
+            width:80%;
+            margin-left:0;
+            opacity:1;
+            top:0;
+            display:block;
+        }
         .wrapper-text{
             margin: 0;
             display: flex;

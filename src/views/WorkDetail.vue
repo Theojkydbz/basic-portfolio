@@ -2,11 +2,28 @@
   <div class="blog">
     <router-link to="/" tag="a" class="back"><img class="back" href='/' src="@/assets/Home/back.svg"></img></router-link>
     <router-view />
+    <div class="cta" v-for="(section, index) in Object.keys(entries)" :key="index">
+      <h1>{{section}}</h1>
+      <div class="card-wrapper">
+        <div v-for="entry in entries[section]" :key="entry.id" class="card" @click="$router.push({name: entry.id})">
+          <div class="card-top">
+              <div class="img" :style="{'background-image':`linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(${entry.img})`}"> </div>
+              <div class="text">
+                  <p class="metier">{{entry.metier}}</p>
+                  <h2 class="name">{{entry.title}}</h2>
+                  <p class='shorttext'>{{entry.description}}</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="footer"></div>
   </div>
 </template>
 
 <script>
+import BLOGENTRIES from '@/statics/data/blogs.json'
+
 import Vue from 'vue'
 import store from '../store.js'
 
@@ -19,6 +36,9 @@ export default {
     }
   },
   computed: {
+    entries() {
+      return BLOGENTRIES
+    }
   },
   created() {
         let scrollY = document.body.style.top
@@ -32,6 +52,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.blog * *{
+vertical-align:middle;
+}
+
+.cta{
+  h1{
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+  .card-wrapper{
+    padding-left: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+
+}
 @font-face {
   font-family: "Manrope Medium";
   src: url("../assets/fonts/manrope-medium.woff2") format("woff2");
@@ -49,11 +85,17 @@ export default {
 
 /deep/ {
   section{
-    margin-top: 70px;
     margin-bottom: 90px;
 
   }
-  
+    h1{
+      margin-right:20px;
+      margin-left:20px;
+    }
+    h2{
+      margin-right:20px;
+      margin-left:20px;
+    }
         
     p{
       font-weight: 400;
@@ -62,9 +104,10 @@ export default {
       letter-spacing: 0;
       line-height: 30px;
       margin-bottom: 20px;
-      
     }
-    .center{
+    .marge{
+      margin-right:20px;
+      margin-left:20px;
     }
     iframe.proto{
       display:none;
@@ -77,36 +120,17 @@ export default {
     
       img {
       width:100%;
-      border-radius:10px;
-      margin-top:30px;
+      
       margin-bottom:30px;
       }
       .phantom{
         display:none;
       }
-    @media only screen and (min-width : 730px){
       .back{
-        display:none;
+        margin-top:30px;
       }
-      .mobileview{
-        display:none;
-      }
-      p{
-      font-size: 16px;
-      line-height:28px;
-      }
-      
-      iframe.proto{
-        display:block;
-        margin:0px auto;
-        margin-top:40px;
-        margin-bottom: 40px;
-        border-width:10px;
-        border-color:#2E3642;
-        border-style:solid;
-        border-radius:20px;
-      }
-    }
+
+    
     h1{
       margin: 0px;
 
@@ -115,8 +139,9 @@ export default {
       color: #2E3642;
 
       margin-top: 20px; 
-      margin-bottom: 20px; 
-      margin-right:40px;
+      margin-bottom: 20px;
+      margin-right:20px;
+      margin-left:20px;
     }
 
     h2{
@@ -126,8 +151,9 @@ export default {
       letter-spacing: 1px;
 
       margin-top: 50px; 
-      margin-bottom: 20px; 
-      margin-right:40px;
+      margin-bottom: 20px;
+      margin-right:20px;
+      margin-left:20px;
     }
     h3{
       margin: 0px;
@@ -137,14 +163,17 @@ export default {
       color: #2E3642;
 
       margin-top: 50px; 
-      margin-bottom: 20px; 
-      margin-right:40px;
+      margin-bottom: 20px;
+      margin-right:20px;
+      margin-left:20px;
     }
 
     ul{
       display:block;
       margin-top:40px;
       margin-bottom:40px;
+      margin-right:20px;
+      margin-left:20px;
       li {
         margin: 0;
         list-style-type: none;
@@ -167,6 +196,7 @@ export default {
       transition: all 0.9s cubic-bezier(0,0,0,1.39);
       color: #2E3642;
       box-shadow: inset 0px -3px 0 #2E3642;
+      
     }
     a:visited { text-decoration: none; color:#2E3642; }
     a:hover { text-decoration: none; color:#2E3642; }
@@ -181,7 +211,9 @@ export default {
       margin-bottom:50px;
       padding: 1em;
       border-left: 5px solid #999;
-      margin-right: 30px;
+      margin-right:50px;
+      margin-left:50px;
+      
     }
     blockquote:before {
       display: none;
@@ -229,21 +261,116 @@ export default {
       z-index:99;
       margin-left:0;
     }
+    @media only screen and (min-width : 730px){
+      .marge{
+        margin-left:30px;
+        margin-right:30px;
+      }
+      h1{
+        margin-left:30px;
+        margin-right:30px;
+      }
+      h2{
+        margin-left:30px;
+        margin-right:30px;
+      }
+      h3{
+        margin-left:30px;
+        margin-right:30px;
+      }
+      ul{
+        margin-left:30px;
+        margin-right:30px;
+      }
+      section{
+        margin-top: 70px;
+      }
+      .back{
+        display:none;
+      }
+      .mobileview{
+        display:none;
+      }
+      img{
+        border-radius:10px;
+        margin-top: 30px;
+      }
+      p{
+        font-size: 16px;
+        line-height:28px;
+      }
+      
+      iframe.proto{
+        display:block;
+        margin:0px auto;
+        margin-top:40px;
+        margin-bottom: 40px;
+        border-width:10px;
+        border-color:#2E3642;
+        border-style:solid;
+        border-radius:20px;
+      }
+    }
+    @media only screen and (min-width : 1120px){
+      .marge{
+        margin-left:50px;
+        margin-right:50px;
+      }
+      h1{
+        margin-left:50px;
+        margin-right:50px;
+      }
+      h2{
+        margin-left:50px;
+        margin-right:50px;
+      }
+      h3{
+        margin-left:50px;
+        margin-right:50px;
+      }
+      ul{
+        margin-left:50px;
+        margin-right:50px;
+      }
+    }
 
   }
       
 section{
-  padding: 0 40px;
+  padding-left:0vh;
+  padding-right:0vh;
 }
+
 @media only screen and (min-width : 730px){
   section{
-    padding-right:11vh
+    padding-left:20vh;
+    padding-right:10vh;
   }
+  
 }
-@media only screen and (min-width : 1200px){
+
+
+
+
+
+@media only screen and (min-width : 1120px){
+  section{
+    padding-left:15vh;
+    padding-right:15vh;
+    }
+}
+
+@media only screen and (min-width : 1300px){
   section{
     padding-left:10vh;
-    padding-right:30vh;
+    padding-right:15vh;
+    }
+}
+
+@media only screen and (min-width : 1400px){
+  section{
+    padding-left:0vh;
+    padding-right:15vh;
     }
 }
 
