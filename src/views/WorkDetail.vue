@@ -2,7 +2,7 @@
   <div class="blog">
     <router-link to="/" tag="a" class="back"><img class="back" href='/' src="@/assets/Home/back.svg"></img></router-link>
     <router-view />
-    <div class="cta" v-for="(section, index) in Object.keys(entries)" :key="index">
+    <!-- <div class="cta" v-for="(section, index) in Object.keys(entries)" :key="index">
       <h1>{{section}}</h1>
       <div class="card-wrapper">
         <div v-for="entry in entries[section]" :key="entry.id" class="card" @click="$router.push({name: entry.id})">
@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="footer"></div>
   </div>
 </template>
