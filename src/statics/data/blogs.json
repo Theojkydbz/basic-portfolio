@@ -5,7 +5,7 @@
       "id": "emobot",
       "date": "March 18, 2019",
       "title": "Emorkshop",
-      "description": "Build conversationnal agent for create better workshop",
+      "description": "Built a conversationnal agent to improve UX workshop.",
       "img": "/img/cover.70228850.png",
       "metier": "Product design"
     },
@@ -13,16 +13,8 @@
       "id": "smartimer-of-galaxy",
       "date": "March 18, 2019",
       "title": "Smartimer of Galaxy",
-      "description": "Worklow and project manager together in a timer",
+      "description": "Workflow and project management integrated timer.",
       "img": "/img/cover.c2b53dde.png",
-      "metier": "Product design"
-    },
-    {
-      "id": "epo",
-      "date": "March 18, 2019",
-      "title": "Epo",
-      "description": "Debates and social networks",
-      "img": "/img/cover.c958dd93.png",
       "metier": "Product design"
     },
     {
@@ -31,6 +23,14 @@
       "title": "Wewood",
       "description": "For a New Circular Economy",
       "img": "/img/cover.988fe4df.png",
+      "metier": "Product design"
+    },
+    {
+      "id": "epo",
+      "date": "March 18, 2019",
+      "title": "Epo",
+      "description": "Debates and social networks",
+      "img": "/img/cover.c958dd93.png",
       "metier": "Product design"
     }
   ],
@@ -48,7 +48,7 @@
       "id": "dailyui",
       "date": "March 18, 2019",
       "title": "Daily User Interface",
-      "description": "Building interfaces for 100 days (IN PROGRESS)",
+      "description": "Building interfaces for 100 days [IN PROGRESS]",
       "img": "/img/cover.149bc0bc.png",
       "metier": "User Interface"
     },
@@ -56,7 +56,7 @@
       "id": "creative-coding",
       "date": "March 18, 2019",
       "title": "Creative Coding",
-      "description": "Some experimentation with codding tools",
+      "description": "Some experimentation with coding tools",
       "img": "/img/cover.eb78f4d8.png",
       "metier": "Coding"
     },
@@ -64,7 +64,7 @@
       "id": "unique",
       "date": "March 18, 2019",
       "title": "Unique",
-      "description": "Algorithmic generator of wallpaper",
+      "description": "Algorithmic generator of wallpapers",
       "img": "/img/cover.07054afb.png",
       "metier": "Coding"
     }
