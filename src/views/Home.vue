@@ -8,7 +8,7 @@
                     <div class="wrapper-text">
                         <h1>Théo Geiller</h1>
                         <p>Hi, I'm a Product Design student oriented in interaction, user experience and development.</p>
-                        <p>[ PORTFOLIO IN PROGRESS ]</p>
+                        <p></p>
                     </div>
                     <a class="resume" target="_blank" href="https://drive.google.com/file/d/1LTsx-hW_DO24EvaZz7G2Op_3y1749S2P/view?usp=sharing">Resume</a>
                     <Social class="social" />

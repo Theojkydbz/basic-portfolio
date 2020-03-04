@@ -2,21 +2,21 @@
   <div class="blog">
     <router-link to="/" tag="a" class="back"><img class="back" href='/' src="@/assets/Home/back.svg"></img></router-link>
     <router-view />
-    <!-- <div class="cta" v-for="(section, index) in Object.keys(entries)" :key="index">
-      <h1>{{section}}</h1>
-      <div class="card-wrapper">
-        <div v-for="entry in entries[section]" :key="entry.id" class="card" @click="$router.push({name: entry.id})">
-          <div class="card-top">
-              <div class="img" :style="{'background-image':`linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(${entry.img})`}"> </div>
-              <div class="text">
-                  <p class="metier">{{entry.metier}}</p>
-                  <h2 class="name">{{entry.title}}</h2>
-                  <p class='shorttext'>{{entry.description}}</p>
-              </div>
-          </div>
+  <!-- <div class="cta" v-for="(section, index) in Object.keys(entries)" :key="index">
+    <h1>{{section}}</h1>
+    <div class="card-wrapper">
+      <div v-for="entry in entries[section]" :key="entry.id" class="card" @click="$router.push({name: entry.id})">
+        <div class="card-top">
+            <div class="img" :style="{'background-image':`linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(${entry.img})`}"> </div>
+            <div class="text">
+                <p class="metier">{{entry.metier}}</p>
+                <h2 class="name">{{entry.title}}</h2>
+                <p class='shorttext'>{{entry.description}}</p>
+            </div>
         </div>
       </div>
-    </div> -->
+    </div>
+  </div> -->
     <div class="footer"></div>
   </div>
 </template>
