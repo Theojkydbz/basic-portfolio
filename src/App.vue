@@ -31,7 +31,7 @@ export default{
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: rgb(4,15,25);
 }
 
 html, body, #app{

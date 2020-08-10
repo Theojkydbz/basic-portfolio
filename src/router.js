@@ -29,5 +29,8 @@ export default new Router({
       component: Home
     },
       ...blogRoutes
-  ]
+  ],
+  scrollBehavior() {
+        return {x: 0, y: 0}
+    }
 })

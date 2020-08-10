@@ -2,71 +2,63 @@
   "projects":
   [
     {
-      "id": "emobot",
+      "id": "confluence",
       "date": "March 18, 2019",
-      "title": "Emorkshop",
-      "description": "Built a conversationnal agent to improve UX workshop.",
-      "img": "/img/cover.70228850.png",
+      "title": "confluence",
+      "description": "How to guide a learning path through professional relationships ?",
+      "img": "/img/cover.2bcb9784.jpg",
       "metier": "Product design"
     },
     {
-      "id": "smartimer-of-galaxy",
-      "date": "March 18, 2019",
-      "title": "Smartimer of Galaxy",
-      "description": "Workflow and project management integrated timer.",
-      "img": "/img/cover.c2b53dde.png",
-      "metier": "Product design"
-    },
-    {
-      "id": "wewood",
-      "date": "March 18, 2019",
-      "title": "Wewood",
-      "description": "For a New Circular Economy",
-      "img": "/img/cover.988fe4df.png",
-      "metier": "Product design"
-    },
-    {
-      "id": "epo",
-      "date": "March 18, 2019",
-      "title": "Epo",
-      "description": "Debates and social networks",
-      "img": "/img/cover.c958dd93.png",
+      "id": "photobook",
+      "date": "March 19, 2019",
+      "title": "photobook",
+      "description": "How to create a habit of observing reality by using free time to enhance it ?",
+      "img": "/img/cover.3b8ffdec.jpg",
       "metier": "Product design"
     }
   ],
   "experiments": 
   [
     {
+      "id": "smartdock",
+      "date": "March 19, 2019",
+      "title": "smartdock",
+      "description": "Reduce interruptions due to smartphones with a dock containing rfid technology.",
+      "img": "/img/cover.a77818d3.jpg",
+      "metier": "Tangible"
+    },
+    {
+      "id": "emobot",
+      "date": "March 18, 2019",
+      "title": "Emorkshop",
+      "description": "Built a conversationnal agent to improve UX workshop.",
+      "img": "/img/cover.1e00d462.jpg",
+      "metier": "Product design"
+    },
+    {
+      "id": "smartimer-of-galaxy",
+      "date": "March 18, 2019",
+      "title": "Smartimer",
+      "description": "Workflow and project management integrated timer.",
+      "img": "/img/cover.80d7fb89.jpg",
+      "metier": "Product design"
+    },
+    {
       "id": "comete",
       "date": "March 18, 2019",
-      "title": "Comète",
-      "description": "SNCF project",
-      "img": "/img/cover.afec76c4.png",
-      "metier": "Agility"
+      "title": "Comète by SNCF",
+      "description": "Sprint based design system improvement",
+      "img": "/img/cover.e305553f.jpg",
+      "metier": "Sprint"
     },
     {
-      "id": "dailyui",
+      "id": "uberelevate",
       "date": "March 18, 2019",
-      "title": "Daily User Interface",
-      "description": "Building interfaces for 100 days [IN PROGRESS]",
-      "img": "/img/cover.149bc0bc.png",
+      "title": "Uber Elevate",
+      "description": "Video experimentation around messenger and uber elevate's user interfaces.",
+      "img": "/img/cover.598a4033.jpg",
       "metier": "User Interface"
-    },
-    {
-      "id": "creative-coding",
-      "date": "March 18, 2019",
-      "title": "Creative Coding",
-      "description": "Some experimentation with coding tools",
-      "img": "/img/cover.eb78f4d8.png",
-      "metier": "Coding"
-    },
-    {
-      "id": "unique",
-      "date": "March 18, 2019",
-      "title": "Unique",
-      "description": "Algorithmic generator of wallpapers",
-      "img": "/img/cover.07054afb.png",
-      "metier": "Coding"
     }
   ]
 }

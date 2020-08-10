@@ -5,7 +5,7 @@
 
 
 - ### Team 
-- [Aurore Tanguy / Product design](http://neocolossus.lecolededesign.com/atanguy/)
+- [Aurore Tanguy / Product design]()
 - [Théo Geiller / Product design](#)
 
 - ### Timeline

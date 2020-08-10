@@ -1,15 +1,18 @@
 <template>
   <div class="nav">
+    
     <div class="head">
       <div class="wrap">
         <div class="line">
-          <h1>Théo Geiller</h1>
+            <router-link to='/' id="section">
+                            <h1>Théo Geiller</h1>
+            </router-link>
         </div>
         <div class="line">
-          <p class="role">Product Design</p>
+          <p class="role">inquisitive designer</p>
         </div>
         <div class="line">
-              <a target="_blank" href="https://drive.google.com/file/d/1LTsx-hW_DO24EvaZz7G2Op_3y1749S2P/view?usp=sharing">Resume</a>
+              <a target="_blank" href="https://drive.google.com/file/d/1Ish2SKD6pgat8lB32qMCw34immkAtzxx/view?usp=sharing">Resume</a>
         </div>
 
         <div class="line">
@@ -122,31 +125,31 @@ export default {
 }
 h1{
 
-  font-family: 'Work Sans';
+  font-family: 'Jost';
   font-weight: 500;
   font-size: 24px;
-  color: #2E3643;
+  color: black;
   letter-spacing: 0;
   font-size: 140%;
 }
 .separateur{
   display: none;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-weight: 300;
   font-size: 140%;
   color: rgba(139,160,233,0.45);
 }
 .role{
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-weight: 300;
   font-size: 140%;
-  color: #747D8C;
+  color:#040f19;
 }
 .devise{
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-weight: 300;
   font-size: 130%;
-  color: #A4B0BE;
+  color: #040f19;
 }
 
 
@@ -163,10 +166,10 @@ h1{
     height:100vh;
     top: 0;
     width: 35vw;
-    background: #FFFFFF;
-    box-shadow: 11px 0 12px 0 rgba(0,0,0,0.05);
-    
+    background-image: url("../assets/UI/navback.jpg");
+    background-size: cover;
   }
+
   .head .wrap{
     display: inline-block;
     vertical-align: text-top;
@@ -180,29 +183,26 @@ h1{
 
   h1{
     font-size: 18pt;
-    color: #2F3542;
+    color: #040f19;
   }
   
   .separateur{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-weight: 300;
     font-size: 140%;
-    color: rgba(139,160,233,0.45);
     display:none
   }
 
   .role{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 140%;
-    color: #747D8C;
   }
 
   .devise{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 130%;
-    color: #A4B0BE;
    
   }
   .liner ul{
@@ -214,12 +214,12 @@ h1{
   }
   .line a{
     
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-size: 14pt;
-    color: #747D8C;
+    color: rgb(81,98,255);
     padding:0;
     padding-bottom:4px;
-    box-shadow: inset 0px -3px 0 #626f82;
+    box-shadow: inset 0px -3px 0 rgb(81,98,255);
     transition: all 0.9s cubic-bezier(0,0,0,1.39);
   }
   a:link{
@@ -230,7 +230,7 @@ h1{
 
   a:hover{
       transition: all 0.2s cubic-bezier(.65,0,.62,1.39);
-      box-shadow: inset 0px -16px 0 rgba(24, 57, 113, 0.349);
+      box-shadow: inset 0px -16px 0 rgba(81,98,255, 0.349);
   }
   
   ul{
@@ -250,7 +250,7 @@ h1{
       a{
         padding:0;
         padding-bottom:3px;
-        box-shadow: inset 0px -3px 0 #2E3642;
+        box-shadow: inset 0px -3px 0 rgb(81,98,255);
         transition: all 0.9s cubic-bezier(0,0,0,1.39);
       }
       a:link{
@@ -261,13 +261,13 @@ h1{
 
       a:hover{
           transition: all 0.2s cubic-bezier(.65,0,.62,1.39);
-          box-shadow: inset 0px -16px 0 rgba(24, 57, 113, 0.349);
+          box-shadow: inset 0px -16px 0 rgba(81,98,255, 0.349);
       }
       
       *{
-        font-family: 'Work Sans', sans-serif;
+        font-family: 'Jost', sans-serif;
         font-size: 14pt;
-        color: #747D8C;
+        color:rgb(81,98,255);
 
       }
     }

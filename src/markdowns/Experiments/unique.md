@@ -3,10 +3,6 @@
 <p class="marge">During summer 2019, after a year full of creative codding experiments, I experiments a lot with vue.js and want to became better in software prototype in order 
 to build minimum vaillable product or proof of concept more faster with web language.</p>
 
-### Skills
-- Software prototyping
-- Empathy
-
 ![Welcome page of our EPO project](../../assets/unique/example.png)
 ![Welcome page of our EPO project](../../assets/unique/example3.png)
 

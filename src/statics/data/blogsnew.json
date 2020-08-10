@@ -1,0 +1,47 @@
+{
+  "projects":
+  [
+    {
+      "id": "confluence",
+      "date": "March 18, 2019",
+      "title": "confluence",
+      "description": "How to guide a learning path through professional relationships ?",
+      "img": "/img/cover.2bcb9784.jpg",
+      "metier": "Product design"
+    },
+    {
+      "id": "photobook",
+      "date": "March 19, 2019",
+      "title": "photobook",
+      "description": "How to create a habit of observing reality by using free time to enhance it ?",
+      "img": "/img/cover.3b8ffdec.jpg",
+      "metier": "Product design"
+    }
+  ],
+  "experiments": 
+  [
+    {
+      "id": "smartimer-of-galaxy",
+      "date": "March 18, 2019",
+      "title": "Smartimer",
+      "description": "Workflow and project management integrated timer.",
+      "img": "/img/cover.80d7fb89.jpg",
+      "metier": "Tangible"
+    },
+    {
+      "id": "smartdock",
+      "date": "March 19, 2019",
+      "title": "smartdock",
+      "description": "How to create a habit of observing reality by using free time to enhance it ?",
+      "img": "/img/cover.a77818d3.jpg",
+      "metier": "Tangible"
+    },{
+      "id": "smartdock",
+      "date": "March 19, 2019",
+      "title": "smartdock",
+      "description": "How to create a habit of observing reality by using free time to enhance it ?",
+      "img": "/img/cover.a77818d3.jpg",
+      "metier": "Tangible"
+    }
+  ]
+}

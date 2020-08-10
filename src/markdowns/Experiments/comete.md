@@ -1,33 +1,63 @@
-![Welcome page of our EPO project](../../assets/comete/cover.png)
-# Comète
-## Overview
-<p class="marge">During my latest internship at <a href="http://emotic.fr" target="_blank">Emotic</a>. I joined the comete team for learn how to design and conceive digital product for metier needs.</p>
 
-- ### Team 
+
+<img class="full" src="../../assets/comete/full.jpg">
+<img class="none" src="../../assets/comete/cover.jpg">
+
+# Comète
+
+
+<div class="overview">
+<div class="first">
+<div class="team">
+
+- ### Team
 - [Emotic](http://emotic.fr)
 - [Théo Geiller / Product design](#)
 
+</div>
+<div class="time">
+
 - ### Timeline
-- 4 months
+- July 2019 - October 2019
+</div>
+</div>
+<div class="second">
+<div class="role">
 
 - ### Role
-- User researcher
-- Interaction design
-- Product design
+- User interface
+- Visual design
  
+</div>
+
+<div class="tools">
+
 - ### Tools
-- Paper / pencil
 - Sketch
-- Invision
-- Gitlab
-- Vue/Angular/Dialogflow
+- InVision
+
+</div>
+
+<div class="methodo">
+
+- ### Methodology
+- Sprint
+</div>
+</div>
+</div>
+
+<p class="marge">During my latest internship at <a href="http://emotic.fr" target="_blank">Emotic</a>. I joined the comete team for learn how to design and conceive digital product for metier needs.</p>
+
+ ---
+
+
 
 ## Context
 <p class="marge">I was involved in 3 sprints for a metier app. For this project i choose to show a speed overview of app and to explain sprints i have participate.</p>
 
 ### Impact
 
-<p class="marge">it's the first time i design for a lot of users, i like that because we have a lot of data and workshop for understand context and real needs of users.</p>
+<p class="marge">it's the first time i design for a real users, i like that because we have a lot of data and workshop for understand context and real needs of users.</p>
 
 > 17,948 Users
 
@@ -38,31 +68,35 @@
 ![Welcome page of our EPO project](../../assets/comete/meeting.png)
 
 
-## Sprint 11
-<p class="marge">During this sprint i have to build powerful user interface in accordance with SNCF design system</p>
+## Sprint 11 : Home & Search 
+<p class="marge">During this sprint, I had to build a user interface compliant with the SNCF's design system, I add to the platform more contrast thanks to the card that stands out from the background. I also adapt the design system to the project.</p>
 
-### Before
-![Welcome page of our EPO project](../../assets/comete/screenold.png)
-### After
-![Welcome page of our EPO project](../../assets/comete/lib.png)
-![Welcome page of our EPO project](../../assets/comete/screenme.png)
-<p class="marge">this sprint was very satisfying because i have to show my screen to the client and demonstrate my ux choice for allow us to take into consideration my evolution.
-these evolution was in production at the end of my internship.</p>
+![Welcome page of our EPO project](../../assets/comete/sprint11_1.jpg)
 
-![Welcome page of our EPO project](../../assets/comete/dev.png)
+![Welcome page of our EPO project](../../assets/comete/sprint11_2.jpg)
 
-## Sprint 12
+### update design system
+
+<p class="marge">This sprint was very satisfying because I was able to show and explain my screens to the SNCF team in charge of the "Comète" project.
+Demonstrating my choices effectively allowed me to take into account the changes in accessibility.</p>
+
+![Welcome page of our EPO project](../../assets/comete/dev.jpg)
+
+## Sprint 12 : A/B Testing + Design system
+<p class="marge">For this sprint, the Comete team wanted to challenge its navigation and home screen. Sébastien (UX at emotic) asked me to develop a screen for A/B tests for future user test workshops.</p>
+
 ![Welcome page of our EPO project](../../assets/comete/ABtest.png)
-<p class="marge">for this sprint Comete's team wanted to change navigation. Sebastien (Emotic ux designer) ask me to developp screen for A/B testing during co-conception workshop.</p>
 
-## Sprint 13
+<p class="marge">I would also create a design system based on the sncf's one which will easily be added to the comet project. </p>
 
-### Before
+![Welcome page of our EPO project](../../assets/comete/lib.png)
+
+
+## Sprint 13 : Onboarding
+<p class="marge">the last sprint I'll ever see will focus on onboarding. I was in charge of updating the user interface and simplifying it.</p>
+
+<p class="marge">I chose to simply enhance onboarding with illustrations. The Comete team was enthusiastic about these choices and my work was implemented in the product.</p>
+
 ![Welcome page of our EPO project](../../assets/comete/screenonbo.png)
-### After
+
 ![Welcome page of our EPO project](../../assets/comete/screenonboup.png)
-<p class="marge">Last sprint are Onboarding oriented for me.</p>
-
-<p class="marge">My task : simplify onboarding.</p>
-
-<p class="marge">After a lot of test i choose to improve Onboarding with undraw illustration. This choice have sucess on Comete's team</p>
