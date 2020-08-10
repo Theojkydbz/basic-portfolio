@@ -301,7 +301,7 @@ div.footer{
             50%{background-position:100% 25%}
             100%{background-position:0% 76%}
         }
-    }
+    } 
     .wrapper-text{
 
         display: flex;
