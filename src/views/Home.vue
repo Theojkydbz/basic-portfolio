@@ -43,7 +43,7 @@
                     
                     <div class="line">
                         <img src="/img/skate.0aa4ea48.jpg"/>
-                        <img src="/img/coding.cb6ab5c5.jpg"/>
+                        <img src="/img/coding.95efa374.jpg"/>
                     </div>
                     <img src="/img/read.f3fc6bd8.jpg"/>
                     <img src="/img/event.9a0315eb.jpg"/>
@@ -200,6 +200,7 @@ div.footer{
     margin-bottom:10vh;
     flex-direction:column;
     margin-top:8vh;
+    align-items:flex-end;
     .info{
         .intro{
             margin-top:10px;

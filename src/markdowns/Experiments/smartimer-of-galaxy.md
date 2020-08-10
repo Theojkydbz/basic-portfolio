@@ -67,7 +67,7 @@
 
 > "With the timer, everyone stays on track and we produce a ton of ideas"     -      Tina Chen, Product Designer at Medium
 
-<p class="marge">I have confronted by my internship to the world of work. despite my position at [Emotic](https://emotic.fr/) 
+<p class="marge">I have confronted by my internship to the world of work. despite my position at <a target="_blank" href="https://www.emotic.fr/">Emotic</a> 
 the contrast between school project and internship project inspire me to work on project management. </p>
 
 ![Persona for our Smartimer project](../../assets/smartimer/persona.png)
