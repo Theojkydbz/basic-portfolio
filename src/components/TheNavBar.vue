@@ -9,7 +9,7 @@
             </router-link>
         </div>
         <div class="line">
-          <p class="role">inquisitive designer</p>
+          <p class="role">product designer</p>
         </div>
         <div class="line">
               <a target="_blank" href="https://drive.google.com/file/d/1Ish2SKD6pgat8lB32qMCw34immkAtzxx/view?usp=sharing">Resume</a>
