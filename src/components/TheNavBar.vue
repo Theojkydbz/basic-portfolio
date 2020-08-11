@@ -109,7 +109,7 @@ export default {
 
 .head{
   margin-top: 10vh;
-  margin-left: 8vh;
+  margin-left: 7vh;
 }
 .head .wrap{
     display: block;

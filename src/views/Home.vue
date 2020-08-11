@@ -912,6 +912,15 @@ h1#section{
 
     @media only screen and (min-width : 1440px){
         
+    h1#section{
+      margin-left: 0%;
+    }
+    .card-wrapper{
+        padding-left: 0%;
+    }
+    .intro{
+        margin-left:0%;
+    }
 
         .card {
             overflow: hidden;
@@ -968,6 +977,7 @@ h1#section{
         }
 
         .aboutcard-wrapper{
+            padding-left: 0%;
             .aboutcard {
                 overflow: hidden;
                 background-color: #ffffff;
@@ -983,7 +993,10 @@ h1#section{
                 
             }
         }
-        
+        .footer{
+            margin-left: 0%;
+            width: 857px;
+        }
     }
 
 
