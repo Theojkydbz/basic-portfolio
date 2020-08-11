@@ -21,6 +21,14 @@
   "experiments": 
   [
     {
+      "id": "uberelevate",
+      "date": "March 18, 2019",
+      "title": "Uber Elevate",
+      "description": "Video experimentation around messenger and uber elevate's user interfaces.",
+      "img": "/img/cover.598a4033.jpg",
+      "metier": "Visual Design"
+    },
+    {
       "id": "smartdock",
       "date": "March 19, 2019",
       "title": "smartdock",
@@ -51,14 +59,7 @@
       "description": "Sprint based design system improvement",
       "img": "/img/cover.e305553f.jpg",
       "metier": "Sprint"
-    },
-    {
-      "id": "uberelevate",
-      "date": "March 18, 2019",
-      "title": "Uber Elevate",
-      "description": "Video experimentation around messenger and uber elevate's user interfaces.",
-      "img": "/img/cover.598a4033.jpg",
-      "metier": "User Interface"
     }
+    
   ]
 }

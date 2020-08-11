@@ -13,7 +13,7 @@
                         <p>I love 🔬 understand and 🚀 team projects.</p>
                         <p>Adaptive product design student <a target="_blank" class="link" href="https://www.lecolededesign.com/">@lecolededesign</a> with attention on habits, feelings and crafting the futur of technology.</p>
                         <div class="annonce">
-                            <p class="annoncetext">I am looking for a remote or face-to-face internship experience from now to March 2021 inclusive. </p>
+                            <p class="annoncetext">I am looking for a remote or face-to-face internship experience from now to January 2021 inclusive. </p>
                         </div>
                     </div>
 
@@ -42,8 +42,9 @@
                     <iframe class="aboutimg" width="560" height="315" src="https://www.youtube.com/embed/1RxyjlMwAcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     
                     <div class="line">
-                        <img src="/img/skate.0aa4ea48.jpg"/>
                         <img src="/img/coding.95efa374.jpg"/>
+                        <img src="/img/skate.0aa4ea48.jpg"/>
+                        
                     </div>
                     <img src="/img/read.f3fc6bd8.jpg"/>
                     <img src="/img/event.9a0315eb.jpg"/>
@@ -67,7 +68,7 @@
                 <div class="aboutcard-wrapper">
                     <div class="aboutcard">
                         <div class="aboutcard-top">
-                            <div class="aboutimg" style="background-image:url(/img/coding.cb6ab5c5.jpg);"> </div>
+                            <div class="aboutimg" style="background-image:url(/img/coding.95efa374.jpg);"> </div>
                             <div class="text">
                             </div>
                         </div>

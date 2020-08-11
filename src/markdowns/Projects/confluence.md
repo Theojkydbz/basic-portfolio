@@ -86,7 +86,7 @@
 
 ## Definition
 
-<p class="marge">To understand the subject we must understand 2 keys definition into pedagogy :</p>
+<p class="marge">To understand the subject we must understand two keys definition into pedagogy :</p>
 
 ![../../assets/confluence/scqdq.png](../../assets/confluence/definition.jpg)
 
@@ -137,18 +137,18 @@
 
 ![../../assets/confluence/Untitled.png](../../assets/confluence/processinformation.jpg)
 
-![../../assets/confluence/Untitled.png](../../assets/confluence/squarecocrea.jpg)
-
 <p class="marge">From my list of objectives, I was able to analyze the different types of users with a semiotic square. I led a co-creation workshop with a student that allows me to collect the kind of data that makes sense in this context for students.</p>
 
-![../../assets/confluence/Untitled.png](../../assets/confluence/cardsorting.jpg)
+![../../assets/confluence/Untitled.png](../../assets/confluence/squarecocrea.jpg)
 
 <p class="marge">With the data that makes sense to students, I was able to create an ontology of the ecosystem, this categorization helps me to better understand design issues</p>
+
+![../../assets/confluence/Untitled.png](../../assets/confluence/cardsorting.jpg)
 
 
 # Design
 ![../../assets/confluence/Untitled.png](../../assets/confluence/processdesign.jpg)
-<p class="marge">In order to prototype efficiently, I started with paper and did my first test on a paper version</p>
+<p class="marge">In order to prototype efficiently, I started with a paper prototype and did my first test on a paper version</p>
 
 ## Paper prototype
 ![../../assets/confluence/Untitled.png](../../assets/confluence/lowfi.jpg)
@@ -159,16 +159,16 @@
 <p class="marge">To have contacts in the application to work with, to ask for help, you have to participate in "Mentor Dating" in video-conversation. These "Mentor Dating" are short video exchanges of 5 minutes that let the sympathy/personal side speak more and not only the skills/professional side. This allows you to see who you would like to be in contact with as a Mentor/Student.</p>
 
 
-![../../assets/confluence/Untitled.png](../../assets/confluence/lowfi1.jpg)
-
 ### Discussion
 <p class="marge">Once the meeting is complete, the mentor and student can be added. They then have an environment designed for factual/rapid exchange and resource sharing.</p>
 
-![../../assets/confluence/Untitled.png](../../assets/confluence/lowfi2.jpg)
+![../../assets/confluence/Untitled.png](../../assets/confluence/lowfi1.jpg)
 
 
 ### Navigation
 <p class="marge">The 2 tab bar is the best solution because it highlights the two main functions of the product, meeting or exchanging with a contact.</p>
+
+![../../assets/confluence/Untitled.png](../../assets/confluence/lowfi2.jpg)
 
 
 ![../../assets/confluence/Untitled.png](../../assets/confluence/lowfi3.jpg)
@@ -179,15 +179,22 @@
 
 ![../../assets/confluence/Untitled.png](../../assets/confluence/flowV2.jpg)
 
-
-
-
-![../../assets/confluence/Untitled.png](../../assets/confluence/lowfisketch.jpg)
-
 <p class="marge"> This low-fidelity model on "sketch" allows me to </p>
 <p class="marge">1) Fix & clean my paper mock-ups</p>
 <p class="marge">2) Precisely manage the layout, spaces/margins.</p>
 <p class="marge">3) Conditionally test</p>
+
+![../../assets/confluence/Untitled.png](../../assets/confluence/lowfisketch.jpg)
+
+
+
+## Visual design
+
+![../../assets/confluence/Untitled.png](../../assets/confluence/logo.jpg)
+
+![../../assets/confluence/Untitled.png](../../assets/confluence/character.jpg)
+
+
 
 ## High-fidelity
 
@@ -214,11 +221,6 @@
 ## UI design & Micro interaction
 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/gxPStVZ8iAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Visual design
-
-![../../assets/confluence/Untitled.png](../../assets/confluence/logo.jpg)
-
-![../../assets/confluence/Untitled.png](../../assets/confluence/character.jpg)
 
 <img class="none" src="../../assets/confluence/cover.jpg">
 
