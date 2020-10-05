@@ -4,7 +4,7 @@
             <div v-if="!isFetching">
                 <div class="head">
                     <p class="headmob">Théo Geiller</p>
-                    <a class="resume link" target="_blank" href="https://drive.google.com/file/d/1LTsx-hW_DO24EvaZz7G2Op_3y1749S2P/view?usp=sharing">Resume</a>
+                    <a class="resume link" target="_blank" href="https://drive.google.com/file/d/1Ish2SKD6pgat8lB32qMCw34immkAtzxx/view?usp=sharing">Resume</a>
                 </div>        
                 <section class="intro">
                         
