@@ -16,6 +16,14 @@
       "description": "How to create a habit of observing reality by using free time to enhance it ?",
       "img": "/img/cover.3b8ffdec.jpg",
       "metier": "Product design"
+    },
+    {
+      "id": "smartdock",
+      "date": "March 19, 2019",
+      "title": "smartdock",
+      "description": "Reduce interruptions due to smartphones with a dock containing rfid technology.",
+      "img": "/img/cover.a77818d3.jpg",
+      "metier": "Tangible"
     }
   ],
   "experiments": 
@@ -27,14 +35,6 @@
       "description": "Video experimentation around messenger and uber elevate's user interfaces.",
       "img": "/img/cover.598a4033.jpg",
       "metier": "Visual Design"
-    },
-    {
-      "id": "smartdock",
-      "date": "March 19, 2019",
-      "title": "smartdock",
-      "description": "Reduce interruptions due to smartphones with a dock containing rfid technology.",
-      "img": "/img/cover.a77818d3.jpg",
-      "metier": "Tangible"
     },
     {
       "id": "emobot",

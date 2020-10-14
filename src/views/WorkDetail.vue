@@ -20,7 +20,14 @@
     
   </div>
     <div class="footer"></div>
-  </div>
+    
+
+
+
+    
+    </div>
+    
+  
 </template>
 
 <script>
@@ -127,6 +134,9 @@ vertical-align:middle;
       margin-right:20px;
       margin-left:20px;
     }
+    .title{
+      margin-top: 20px;
+    }
     h2{
       margin-right:20px;
       margin-left:20px;
@@ -139,6 +149,13 @@ vertical-align:middle;
       letter-spacing: 0;
       line-height: 30px;
       margin-bottom: 20px;
+    }
+    p.center{
+      text-align: center;
+      margin-top: -50px;
+      margin-bottom: 40px;
+      color: rgba(16, 37, 56, 0.877);
+      font-weight: 300;
     }
     p.right{
           text-align: right;
@@ -183,31 +200,29 @@ vertical-align:middle;
       font-size: 29px;
       color: rgb(4,15,25);
 
-      margin-top: 20px; 
+      margin-top: 150px; 
       margin-bottom: 20px;
       margin-right:20px;
       margin-left:20px;
-      text-transform: uppercase;
     }
 
     h2{
       font-weight:300;
       font-size: 23px;
-      color: rgba(4,15,25,0.5);
+      color: rgb(4,15,25);
       letter-spacing: 1px;
 
       margin-top: 50px; 
       margin-bottom: 20px;
       margin-right:20px;
       margin-left:20px;
-      text-transform: uppercase;
     }
     h3{
       margin: 0px;
       
-      font-weight: 500;
+      font-weight: 300;
       font-size: 20px;
-      color: #5162ff;
+      color: #132aff;
 
       margin-top: 50px; 
       margin-bottom: 20px;

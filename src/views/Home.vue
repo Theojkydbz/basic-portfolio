@@ -10,10 +10,10 @@
                         
                     <div class="wrapper-text">
                         <h1>Hi everyone! I’m Théo. 👨‍💻</h1>
-                        <p>I love 🔬 understand and 🚀 team projects.</p>
+                        <p>I love understand and team projects.</p>
                         <p>Adaptive product design student <a target="_blank" class="link" href="https://www.lecolededesign.com/">@lecolededesign</a> with attention on habits, feelings and crafting the futur of technology.</p>
                         <div class="annonce">
-                            <p class="annoncetext">I am looking for a remote or face-to-face internship experience from now to January 2021 inclusive. </p>
+                            <p class="annoncetext"></p>
                         </div>
                     </div>
 
@@ -59,7 +59,7 @@
                     </div>
                     <div class="aboutcard">
                         <div class="aboutcard-top">
-                            <div class="aboutimg" style="background-image:url(/img/skate.0aa4ea48.jpg);"> </div>
+                            <div class="aboutimg" style="background-image:url(/img/skate.ad453375.jpg);"> </div>
                             <div class="text">
                             </div>
                         </div>
@@ -68,14 +68,14 @@
                 <div class="aboutcard-wrapper">
                     <div class="aboutcard">
                         <div class="aboutcard-top">
-                            <div class="aboutimg" style="background-image:url(/img/coding.95efa374.jpg);"> </div>
+                            <div class="aboutimg" style="background-image:url(/img/coding.80736274.jpg);"> </div>
                             <div class="text">
                             </div>
                         </div>
                     </div>
                     <div class="aboutcard-read">
                         <div class="aboutcard-top">
-                            <div class="aboutimg" style="background-image:url(/img/read.f3fc6bd8.jpg);"> </div>
+                            <div class="aboutimg" style="background-image:url(/img/read.69c951a4.jpg);"> </div>
                             <div class="text">
                             </div>
                         </div>
@@ -84,13 +84,13 @@
                 <div class="aboutcard-wrapper">
                     <div class="aboutcard-read">
                         <div class="aboutcard-top">
-                            <div class="aboutimg" style="background-image:url(/img/event.9a0315eb.jpg);"> </div>
+                            <div class="aboutimg" style="background-image:url(/img/event.c0ca06e9.jpg);"> </div>
                             <div class="text"> </div>
                         </div>
                     </div>
                     <div class="aboutcard">
                         <div class="aboutcard-top">
-                            <div class="aboutimg" style="background-image:url(/img/learn.d8a2a942.jpg);"> </div>
+                            <div class="aboutimg" style="background-image:url(/img/learn.af15f96d.jpg);"> </div>
                             <div class="text">
                             </div>
                         </div>
@@ -419,6 +419,12 @@ h1#section{
             transform:translateY(-5px);
             cursor: pointer;
             box-shadow: 0 30px 30px -1px rgba(24,50,115,0.06);
+        }
+        &:active{
+        transform: scale(0.95);
+        transition: transform 0.1s ease-in-out;
+        background-color: #ede8fe3f;
+        box-shadow: -2px 10px 75px 15px #ede8fe94;
         }
         
 

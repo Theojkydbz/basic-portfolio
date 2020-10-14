@@ -1,7 +1,7 @@
 <img class="none" src="../../assets/smartimer/cover.jpg">
 <img class="full" src="../../assets/smartimer/full.jpg">
 
-# Smartimer of galaxy
+<h1 class="title">Visual object allowing to materialize the time that passes, by indicating the time remaining to an activity.</h1>
 
 <div class="overview">
 <div class="first">
@@ -14,16 +14,14 @@
 <div class="time">
 
 - ### Timeline
-- 48 hours
+- August 2019 (48 hours)
 </div>
 </div>
 <div class="second">
 <div class="role">
 
 - ### Role
-- Product designer
-- UX/UI Designer
-- Interaction Designer
+- User research, UI design, Interaction design.
 </div>
 
 <div class="tools">
@@ -31,22 +29,15 @@
 - ### Tools
 - Sketch
 - Kanban Board
-- Adobe Illustrator
 - Adobe Photoshop
 
 </div>
 
-<div class="methodo">
-
-- ### Methodology
-- Persona
-- Storyboard
-</div>
 </div>
 </div>
 
 
-<p class="marge">Smartimer of Galaxy is a very visual object allowing to materialize the time that passes, by indicating the time remaining to an activity. it also provides an opportunity to learn how to manage it while implementing self-regulation.</p>
+<p class="marge">Smartimer of Galaxy provides an opportunity to learn how to manage time while implementing self-regulation.</p>
 
  ---
 
@@ -86,8 +77,7 @@ their employees' time.</p>
 <p class="marge">A task is completed before the scheduled time ? Smartimer of Galaxy adapts to our user with simple interactions</p>
 
 ![Hero render for our Smartimer project](../../assets/smartimer/gestures.png)
-<p class="marge">Smartimer of Galaxy is a very visual object allowing to materialize the time that passes, by indicating the time remaining to an activity. 
-it also provides an opportunity to learn how to manage it while implementing self-regulation. It brings urgency and efficiency to the task of our user : For meeting, rapid prototyping, creative workshop, simple tasks, workshop. Using the principle of the timer, the Smartimer of Galaxy removes its authoritarian character thanks to approximate data and by removing precise measurement. Smartimer of Galaxy is connected to our calendar and all our events and as soon as it is on, our events and tasks are materialized in time and have an expiration.
+<p class="marge">It brings urgency and efficiency to the task of our user : For meeting, rapid prototyping, creative workshop, simple tasks, workshop. Using the principle of the timer, the Smartimer of Galaxy removes its authoritarian character thanks to approximate data and by removing precise measurement. Smartimer of Galaxy is connected to our calendar and all our events and as soon as it is on, our events and tasks are materialized in time and have an expiration.
 A task is completed before the scheduled time ? Smartimer of Galaxy adapts to our user with simple interactions: just flip it on the right side to move on to the next event in your calendar ! Go back to your previous task by just flipping it to the left ! Want a break ? Put the screen on the table to put the timer on hold ! At the end of your day you will get a glimpse of your real schedule and will improve the way you plan your schedule.</p>
 
 ![Hero render for our Smartimer project](../../assets/smartimer/technical.png)

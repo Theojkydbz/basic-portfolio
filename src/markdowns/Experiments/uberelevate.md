@@ -4,7 +4,7 @@
 
 <img class="full" src="../../assets/uber/full.jpg">
 
-# Uber Elevate + Messenger
+<h1 class="title">Uber Elevate + Messenger</h1>
 
 <div class="overview">
 <div class="first">
@@ -16,7 +16,7 @@
 <div class="time">
 
 - ### Timeline
-- November 2019 - June 2020
+- November 2019 - December 2020 (3 weeks)
 </div>
 </div>
 <div class="second">
@@ -48,13 +48,9 @@
 
  ---
 
-# context
+## Context
 
 <p class="marge">For my interface animation course, I had to work on the theme of aviation. After some research, I ended up being absorbed by reruns of the <a target="_blank" href="https://www.uber.com/fr/fr/elevate/summit/">"Summit" events</a> organized by <a target="_blank" href="https://www.uber.com/fr/fr/elevate/">Uber Elevate</a>. My teacher wanted us to start from an existing video and add interfaces. So I chose the demonstration video <a target="_blank" href="https://www.youtube.com/watch?time_continue=1&v=JuWOUEFB_IQ&feature=emb_title">"UBERAIR: closer than you think | Uber"</a> from Uber to add my concept of connecting Messenger and Uber Elevate through interfaces and animation.</p>
 
- 
-# Video prototype
-
 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8mv9LHPTF98" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<p class="marge"></p>

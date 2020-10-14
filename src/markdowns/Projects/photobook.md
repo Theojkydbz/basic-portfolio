@@ -2,7 +2,8 @@
 <img class="none" src="../../assets/photobook/cover.jpg">
 <img class="full" src="../../assets/photobook/full.jpg">
 
-# Photobook
+<h1 class="title">A smartphone camera based application that seeks to improve the real-world observations that students can make.</h1>
+
 <div class="overview">
 <div class="first"> 
 <div class="team">
@@ -41,7 +42,6 @@
 </div>
 </div>
 </div>
-<p class="marge">An application based on the smartphone camera that seeks to improve the real-world observations that students can make.</p>
 
  ---
 

@@ -2,7 +2,7 @@
 <img class="full" src="../../assets/emorkshop/full.jpg">
 <img class="none" src="../../assets/emorkshop/cover.jpg">
 
-# Emorkshop
+<h1 class="title">Emorkshop</h1>
 
 <div class="overview">
 <div class="first">

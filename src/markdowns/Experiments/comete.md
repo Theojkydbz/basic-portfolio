@@ -3,7 +3,7 @@
 <img class="full" src="../../assets/comete/full.jpg">
 <img class="none" src="../../assets/comete/cover.jpg">
 
-# Comète
+<h1 class="title">Comète</h1>
 
 
 <div class="overview">
