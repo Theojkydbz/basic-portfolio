@@ -20,7 +20,6 @@ const blogRoutes = Object.keys(BlogEntries).map(section => {
   }
 })
 
-
 export default new Router({
   mode: 'history',
   routes: [
@@ -28,7 +27,8 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
-    },...blogRoutes
+    },
+      ...blogRoutes
   ],
   scrollBehavior() {
         return {x: 0, y: 0}
