@@ -28,10 +28,9 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
-    },{ path: '*', 
-        component: Home
-    },
-      ...blogRoutes
+    },...blogRoutes, { path: '*', 
+    component: Home
+    }
   ],
   scrollBehavior() {
         return {x: 0, y: 0}
