@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/img/LIST.461b8020.png"
   },
   {
-    "revision": "97c5cbcb98c0aff18a98fe73dc78013f",
+    "revision": "066e2bd9c6f1e3387fd66a66dcb3ac15",
     "url": "/index.html"
   },
   {
@@ -360,8 +360,8 @@ self.__precacheManifest = [
     "url": "/img/userflow.8ab62fdd.png"
   },
   {
-    "revision": "20e38f1ca5347efd5a86",
-    "url": "/js/app.203422e8.js"
+    "revision": "afae40ff4e98d8297fe5",
+    "url": "/js/app.838c4444.js"
   },
   {
     "revision": "b375f059913612ff6d0ce59bc8643c6e",
@@ -668,8 +668,8 @@ self.__precacheManifest = [
     "url": "/img/I.823cbc1c.png"
   },
   {
-    "revision": "b9eb20ae7387f6ba18d2a49bfe186481",
-    "url": "/fonts/manrope-semibold.b9eb20ae.woff2"
+    "revision": "d67747cf05901705b2f30954dd297bec",
+    "url": "/fonts/manrope-medium.d67747cf.woff2"
   },
   {
     "revision": "29b882f018fa6fe75fd338aaae6235b8",
@@ -700,8 +700,8 @@ self.__precacheManifest = [
     "url": "/fonts/MaterialIcons-Regular.96c47680.eot"
   },
   {
-    "revision": "d67747cf05901705b2f30954dd297bec",
-    "url": "/fonts/manrope-medium.d67747cf.woff2"
+    "revision": "b9eb20ae7387f6ba18d2a49bfe186481",
+    "url": "/fonts/manrope-semibold.b9eb20ae.woff2"
   },
   {
     "revision": "a7dddf636ec1fca4ac34b24f27817ea7",
@@ -720,7 +720,7 @@ self.__precacheManifest = [
     "url": "/css/chunk-68910a8c.6c201d59.css"
   },
   {
-    "revision": "20e38f1ca5347efd5a86",
+    "revision": "afae40ff4e98d8297fe5",
     "url": "/css/app.8af25376.css"
   }
 ];
