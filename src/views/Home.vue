@@ -9,7 +9,7 @@
                 <section class="intro">
                         
                     <div class="wrapper-text">
-                        <h1>Hi everyone! I’m Théo. 👨‍💻</h1>
+                        <h1>VHi everyone! I’m Théo. 👨‍💻</h1>
                         <p>I love understand and team projects.</p>
                         <p>Adaptive product design student <a target="_blank" class="link" href="https://www.lecolededesign.com/">@lecolededesign</a> with attention on habits, feelings and crafting the futur of technology.</p>
                         <div class="annonce">

@@ -1,6 +1,6 @@
 <template>
   <div class="blog">
-    <router-link to="/" tag="a" class="back"><img class="back" href='/' src="@/assets/Home/back.svg"></img></router-link>
+    <router-link to="/" tag="a" class="back"><img class="back" href='/' src="@/assets/Home/back.svg"></router-link>
     <router-view />
   
     <h1>{{section}}</h1>
